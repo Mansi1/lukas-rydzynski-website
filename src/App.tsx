@@ -8,7 +8,7 @@ import { initI18next } from "./plugins/i18next"
 import { I18nextProvider, useTranslation } from "react-i18next"
 import { ThemeProvider } from "./theme/ThemeProvider"
 import { ImpressPage } from "./pages/Impress"
-
+import { getRouterBaseName } from "./functions/getRouterBaseName"
 initI18next(
   {
     de,
@@ -23,7 +23,7 @@ function App() {
   return (
     <ThemeProvider>
       <I18nextProvider i18n={i18n}>
-        <BrowserRouter>
+        <BrowserRouter basename={getRouterBaseName()}>
           <Routes>
             <Route path={MAIN_ROUTE} element={<MainPage />} />
             <Route path={IMPRESS_ROUTE} element={<ImpressPage />} />
