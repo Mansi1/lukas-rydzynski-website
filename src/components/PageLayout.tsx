@@ -31,7 +31,7 @@ export const PageLayout = ({ children }: PropsWithChildren<unknown>) => {
       {children}
       <div style={{ textAlign: "center" }}>
         <a onClick={() => navigate(IMPRESS_ROUTE)}>
-          <Trans>Impressum</Trans>
+          <Trans>Impressum & Datenschutz</Trans>
         </a>
       </div>
     </Container>
