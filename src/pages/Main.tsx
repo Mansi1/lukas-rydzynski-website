@@ -1,15 +1,13 @@
 import React, { useCallback } from "react"
 import { PageLayout } from "../components/PageLayout"
-import logoSrc from "./../assets/img/logo.svg"
 import { makeStyles } from "@mui/styles"
-import { Stack } from "@mui/material"
-import { PlugIcon } from "@mui-extra/icons/PlugIcon"
+import { Stack, Theme, useTheme } from "@mui/material"
 import { getNsTrans } from "../functions/getNsTrans"
 import { useTranslation } from "react-i18next"
 
 const Trans = getNsTrans("main")
 
-const useStyle = makeStyles({
+const useStyle = makeStyles(({ palette }: Theme) => ({
   imageWrapper: {
     textAlign: "center",
   },
@@ -29,10 +27,24 @@ const useStyle = makeStyles({
   spacer: {
     height: 80,
   },
-})
+  text: { fontWeight: "bold", fontSize: 18 },
+  primary: {
+    fontWeight: "bold",
+    fontSize: 18,
+    color: palette.primary.main,
+  },
+  secondary: {
+    fontWeight: "bold",
+    fontSize: 18,
+    color: palette.secondary.main,
+  },
+}))
 
 export const MainPage = () => {
   const classes = useStyle()
+  const {
+    typography: { fontFamily },
+  } = useTheme()
   const { i18n } = useTranslation()
   const changeLanguageClick = useCallback(
     (lng: "en" | "de") => {
@@ -44,61 +56,22 @@ export const MainPage = () => {
   return (
     <PageLayout>
       <div className={classes.imageWrapper}>
-        <img
-          src={logoSrc}
-          className={classes.image}
-          height={200}
-          width={200}
-          alt={"material ui logo"}
-        />
         <h1>
-          <Trans>Material UI v5 starter</Trans>
+          <Trans>Lukas Rydzynski's website</Trans>
         </h1>
-
         <h2>
-          <PlugIcon /> <Trans>Used plugins</Trans>
+          <Trans>Investment advice</Trans>
         </h2>
-        <Stack spacing={1}>
-          <div>
-            <a rel="noreferrer" href={"https://mui.com"} target={"_blank"}>
-              Material UI (<Trans>core lib</Trans>)
-            </a>
+        <Stack direction={"column"} spacing={2}>
+          <div className={classes.text}>
+            <Trans>Font name</Trans>
+            <span>: {fontFamily}</span>
           </div>
-          <div>
-            <a
-              rel="noreferrer"
-              href={"https://reactrouter.com/docs/en/v6/api"}
-              target={"_blank"}
-            >
-              react-router-dom v6
-            </a>
+          <div className={classes.primary}>
+            <Trans>Primary color</Trans>
           </div>
-          <div>
-            <a
-              rel="noreferrer"
-              href={"https://mansi1.github.io/mdi-react-icons/mui"}
-              target={"_blank"}
-            >
-              @mui-extra/icons (<Trans>icons lib</Trans>)
-            </a>
-          </div>
-          <div>
-            <a
-              rel="noreferrer"
-              href={"https://mansi1.github.io/mdi-react-icons/mui"}
-              target={"_blank"}
-            >
-              i18next (<Trans>translation</Trans>)
-            </a>
-          </div>
-          <div>
-            <a
-              rel="noreferrer"
-              href={"https://www.npmjs.com/package/@milkscout/react"}
-              target={"_blank"}
-            >
-              @milkscout/react (<Trans>utils lib</Trans>)
-            </a>
+          <div className={classes.secondary}>
+            <Trans>Secondary color</Trans>
           </div>
         </Stack>
         <Stack spacing={2} direction={"row"} className={classes.languageSwitch}>

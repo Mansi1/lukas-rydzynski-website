@@ -8,7 +8,10 @@ import { GlobalProps } from "@emotion/react"
 
 export const themeOptions: ThemeOptions = {
   palette: {
-    primary: { main: "#003C91" },
+    primary: {
+      main: "#343552",
+    },
+    secondary: { main: "#ed8103" },
   },
   typography: { fontFamily: "Roboto" },
   components: {

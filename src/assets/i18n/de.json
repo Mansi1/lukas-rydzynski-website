@@ -1,10 +1,9 @@
 {
   "main": {
-    "Material UI v5 starter": "Material UI v5 Einstieg",
-    "Used plugins": "Benutzte Plugins",
-    "translation": "Übersetzung",
-    "utils lib": "Hilfsbibliothek",
-    "core lib": "Hauptbibliothek",
-       "icons lib": "Symbolbibliothek"
+    "Lukas Rydzynski's website": "Lukas Rydzynski's Webseite",
+    "Primary color": "Primärfarbe",
+    "Secondary color": "Sekundärfarbe",
+    "Font name": "Schriftname",
+    "Investment advice": "Vermögensberatung"
   }
 }

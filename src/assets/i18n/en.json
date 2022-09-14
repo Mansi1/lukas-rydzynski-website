@@ -1,10 +1,9 @@
 {
   "main": {
-    "Material UI v5 starter": "Material UI v5 starter",
-    "Used plugins": "Used plugins",
-    "translation": "translation",
-    "utils lib": "utils lib",
-    "core lib": "core lib",
-    "icons lib": "icons lib"
+   "Lukas Rydzynski's website": "Lukas Rydzynski's website",
+    "Primary color": "Primary color",
+    "Secondary color": "Secondary color",
+    "Font name": "Font name",
+    "Investment advice": "Investment advice"
   }
 }
