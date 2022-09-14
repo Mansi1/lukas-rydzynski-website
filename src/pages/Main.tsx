@@ -8,14 +8,8 @@ import { useTranslation } from "react-i18next"
 const Trans = getNsTrans("main")
 
 const useStyle = makeStyles(({ palette }: Theme) => ({
-  imageWrapper: {
+  root: {
     textAlign: "center",
-  },
-  image: {
-    animation: "$rotation 3s infinite linear",
-  },
-  "@keyframes rotation": {
-    "100%": { transform: "rotatey(360deg)" },
   },
   languageSwitch: {
     justifyContent: "center",
@@ -53,13 +47,7 @@ export const MainPage = () => {
 
   return (
     <PageLayout>
-      <div className={classes.imageWrapper}>
-        <h1>
-          <Trans>Lukas Rydzynski's Webseite</Trans>
-        </h1>
-        <h2>
-          <Trans>Vermögensberatung</Trans>
-        </h2>
+      <div className={classes.root}>
         <div>
           <div>
             <h2>

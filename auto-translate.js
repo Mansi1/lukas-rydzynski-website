@@ -96,6 +96,10 @@ const main = async () => {
       console.log(language + ' ' + count + '/' + translations.length);
     }
   }
+  writeFileSync(
+      path.join(TRANSLATION_FILES_DIR, DEFAULT_LANGUAGE + '.json'),
+      jsonStringify(defaultLanguage, { space: 2 }),
+  );
   console.log('done');
 }
 

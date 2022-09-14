@@ -25,7 +25,11 @@ export const themeOptions: ThemeOptions = {
 }
 
 export const getGlobalStyles = (theme: Theme): GlobalProps["styles"] => ({
-  a: { color: theme.palette.primary.main, textDecoration: "none" },
+  a: {
+    color: theme.palette.primary.main,
+    textDecoration: "none",
+    cursor: "pointer",
+  },
   body: { fontFamily: "Roboto", margin: 0, padding: 0 },
   html: { margin: 0, padding: 0 },
 })
