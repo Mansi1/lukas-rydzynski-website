@@ -38,6 +38,16 @@ export const initI18next = (
           "Missing translation ns='" + namespace + "' key='" + key + "'",
         )
       }
+      try {
+        await fetch(
+          `http://localhost:12345/missing/${encodeURIComponent(
+            namespace,
+          )}?key=${encodeURIComponent(key)}`,
+          { method: "PUT" },
+        )
+      } catch (e) {
+        // ignore
+      }
     },
   })
 }

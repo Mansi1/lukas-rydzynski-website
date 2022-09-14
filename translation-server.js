@@ -8,8 +8,12 @@ const I18N_ERROR_FILE = path.join(__dirname, 'i18n.error.json');
 const SERVER_PORT = 12345;
 
 const JSON_FILE = {};
+let timeout;
 const saveFileData = () => {
-  fs.writeFileSync(I18N_ERROR_FILE, JSON.stringify(JSON_FILE, null, 2), { encoding: 'utf-8', flag: 'w' });
+  clearTimeout(timeout);
+  timeout = setTimeout(() => {
+    fs.writeFileSync(I18N_ERROR_FILE, JSON.stringify(JSON_FILE, null, 2), { encoding: "utf-8", flag: "w" });
+  }, 800);
 };
 
 const addMissingTranslation = (ns, key) => {
@@ -33,7 +37,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // A sample route
-app.put('/missing/:ns', (req, res, next) => {
+app.put("/missing/:ns", (req, res) => {
   const namespace = req.params.ns;
   const key = req.query.key;
 
@@ -43,8 +47,8 @@ app.put('/missing/:ns', (req, res, next) => {
   }
 
   addMissingTranslation(namespace, key);
-
-  res.send(`Added missing translation ns "${namespace}" key "${key}"`);
+  console.log(`Added missing translation ns "${namespace}" key "${key}"`);
+  res.send();
 });
 
 // Start the Express server

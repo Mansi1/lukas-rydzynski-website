@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const DEFAULT_LANGUAGE = 'en';
+const DEFAULT_LANGUAGE = 'de';
 
 (async ()=> {
     let errorCode = 0;
