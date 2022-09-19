@@ -2,10 +2,12 @@ import React from "react"
 import { Button, Typography } from "@mui/material"
 import { getNsTrans } from "../../functions/getNsTrans"
 import backgroundImage from "../../assets/img/what-is-important.jpeg"
+import { useMedia } from "../../hooks/useMedia"
 
 const Trans = getNsTrans("main")
 
 export const WhatIsImportant = () => {
+  const { mobile } = useMedia()
   return (
     <div style={{}}>
       <div
@@ -18,18 +20,17 @@ export const WhatIsImportant = () => {
           backgroundPosition: "center",
           display: "grid",
           placeItems: "center",
-          marginRight: -24,
-          marginLeft: -24,
+          marginRight: -(mobile ? 16 : 24),
+          marginLeft: -(mobile ? 16 : 24),
         }}
       >
         <div
           style={{
             maxWidth: 450,
-            margin: "auto",
             paddingTop: 150,
             paddingBottom: 150,
-            marginRight: 24 * 2,
-            marginLeft: 24 * 2,
+            paddingRight: mobile ? 16 : 24,
+            paddingLeft: mobile ? 16 : 24,
           }}
         >
           <h2
