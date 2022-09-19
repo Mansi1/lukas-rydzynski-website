@@ -1,4 +1,8 @@
+import "@fontsource/roboto"
 import "@fontsource/italiana"
+import "@fontsource/raleway"
+import "@fontsource/raleway/500.css"
+import "@fontsource/raleway/600.css"
 
 import { Theme, ThemeOptions } from "@mui/material/styles/createTheme"
 import { GlobalProps } from "@emotion/react"
@@ -9,9 +13,9 @@ export const themeOptions: ThemeOptions = {
       main: "#363D56",
     },
     secondary: { main: "#ed8103" },
-    background: { default: "#e3e8ff" },
+    background: { default: "#f6f7ff" },
   },
-  typography: { fontFamily: "Italiana" },
+  typography: { fontFamily: "Roboto" },
   components: {
     MuiButton: {
       defaultProps: {
