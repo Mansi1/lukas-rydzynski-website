@@ -19,10 +19,10 @@ export const PageLayout = ({ children }: PropsWithChildren<unknown>) => {
   const classes = useStyle()
   const navigate = useNavigate()
   const { palette } = useTheme()
-
+  console.log({ palette })
   return (
     <>
-      <style>{`body { background-color: ${palette.primary.light}}`}</style>
+      <style>{`body { background-color: ${palette.background.default}}`}</style>
       <Container maxWidth={"lg"} className={classes.root}>
         <a style={{ textAlign: "center" }} onClick={() => navigate(MAIN_ROUTE)}>
           <h1>

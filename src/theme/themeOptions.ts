@@ -12,6 +12,7 @@ export const themeOptions: ThemeOptions = {
       main: "#363D56",
     },
     secondary: { main: "#ed8103" },
+    background: { default: "#e3e8ff" },
   },
   typography: { fontFamily: "Roboto" },
   components: {
