@@ -1337,6 +1337,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/italiana@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/italiana/-/italiana-4.5.10.tgz#9e7c4a9d565ab862e01bafd2b9c26125090f03de"
+  integrity sha512-hn/ldvFZvfG4Du6gErcgQPN5yfnHhx4ZFhV+MWXwcJghm1MeULVbeQskKTqiynJe5BUTyLNcdNQ7s5DH9FWazg==
+
 "@fontsource/roboto@^4.5.1":
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.5.1.tgz#63f7b783f755d8f6727eb60198627e7e1be3ac20"

@@ -15,6 +15,7 @@
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
+    "@fontsource/italiana": "^4.5.10",
     "@fontsource/roboto": "^4.5.1",
     "@milkscout/react": "^1.0.35",
     "@mui-extra/icons": "^0.0.6",
