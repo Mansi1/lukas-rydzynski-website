@@ -1,9 +1,6 @@
-# Material UI v5 starter
+# Website of Lukas Rydzynski
 
-This project build on creat-react-app and uses ready to start integration with translation custom git hooks code formatting and commit linting
-<b><h6>!!! Delete homepage in package.json !!!</h2></b>
-
-<h1><a href="https://mansi1.github.io/material-ui-v5-starter" target="_blank">DEMO</a></h1>
+<h1><a href="https://mansi1.github.io/lukas-rydzynski-website/" target="_blank">DEMO</a></h1>
 
 ## Available Scripts
 
