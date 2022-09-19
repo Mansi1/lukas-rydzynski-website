@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/lukas-rydzynski-website/static/css/main.c84cf000.css",
-    "main.js": "/lukas-rydzynski-website/static/js/main.86c38eed.js",
+    "main.js": "/lukas-rydzynski-website/static/js/main.f7f04460.js",
     "static/js/787.e4fe72a3.chunk.js": "/lukas-rydzynski-website/static/js/787.e4fe72a3.chunk.js",
     "static/media/italiana-all-400-normal.woff": "/lukas-rydzynski-website/static/media/italiana-all-400-normal.6c7586b75fcaee686969.woff",
     "static/media/italiana-latin-400-normal.woff2": "/lukas-rydzynski-website/static/media/italiana-latin-400-normal.97e8c473f4e9281afb95.woff2",
     "index.html": "/lukas-rydzynski-website/index.html",
     "main.c84cf000.css.map": "/lukas-rydzynski-website/static/css/main.c84cf000.css.map",
-    "main.86c38eed.js.map": "/lukas-rydzynski-website/static/js/main.86c38eed.js.map",
+    "main.f7f04460.js.map": "/lukas-rydzynski-website/static/js/main.f7f04460.js.map",
     "787.e4fe72a3.chunk.js.map": "/lukas-rydzynski-website/static/js/787.e4fe72a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c84cf000.css",
-    "static/js/main.86c38eed.js"
+    "static/js/main.f7f04460.js"
   ]
 }
