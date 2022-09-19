@@ -28,6 +28,7 @@ export const getGlobalStyles = (theme: Theme): GlobalProps["styles"] => ({
     textDecoration: "none",
     cursor: "pointer",
   },
-  body: { fontFamily: theme.typography.fontFamily, margin: 0, padding: 0 },
+  "*": { fontFamily: theme.typography.fontFamily },
+  body: { margin: 0, padding: 0 },
   html: { margin: 0, padding: 0 },
 })
