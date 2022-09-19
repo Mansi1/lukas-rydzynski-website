@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 width="1155px" height="1155px" viewBox="0 0 1155 1155" enable-background="new 0 0 1155 1155" xml:space="preserve">
-<rect x="0" y="0" width="1155" height="1155" fill="rgb(255,255,255)" /><g transform="translate(30,30)"><g transform="translate(150,0) scale(0.15,0.15)"><g transform="" style="fill: rgb(255, 255, 255);">
+<rect x="0" y="0" width="1155" height="1155" fill="none" /><g transform="translate(30,30)"><g transform="translate(150,0) scale(0.15,0.15)"><g transform="" style="fill: rgb(255, 255, 255);">
 <g>
 	<polygon points="0,15 85,0 100,85 15,100"/>
 </g>

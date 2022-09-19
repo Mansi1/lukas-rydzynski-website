@@ -1,5 +1,6 @@
 export const IS_PRODUCTION = process.env.NODE_ENV === "production"
 export const IS_TEST = process.env.NODE_ENV === "test"
 export const IS_DEVELOPMENT = process.env.NODE_ENV === "development"
-export const GITHUB_REPO_URL =
-  "https://github.com/Mansi1/material-ui-v5-starter"
+export const EMAIL = "lukas.rydzynski@deinvermögensberater.com"
+export const PHONE = "+49 9951 30 90 870"
+export const MOBILE = "+49 1577 870 70 79"

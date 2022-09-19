@@ -9,7 +9,7 @@ import { GlobalProps } from "@emotion/react"
 export const themeOptions: ThemeOptions = {
   palette: {
     primary: {
-      main: "#343552",
+      main: "#363D56",
     },
     secondary: { main: "#ed8103" },
   },

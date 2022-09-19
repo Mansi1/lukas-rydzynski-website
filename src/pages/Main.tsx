@@ -1,22 +1,14 @@
-import React, { useCallback } from "react"
+import React from "react"
 import { PageLayout } from "../components/PageLayout"
 import { makeStyles } from "@mui/styles"
 import { Button, Stack, Theme } from "@mui/material"
 import { getNsTrans } from "../functions/getNsTrans"
-import { useTranslation } from "react-i18next"
 
 const Trans = getNsTrans("main")
 
 const useStyle = makeStyles(({ palette }: Theme) => ({
   root: {
     textAlign: "center",
-  },
-  languageSwitch: {
-    justifyContent: "center",
-    marginTop: 30,
-  },
-  switch: {
-    cursor: "pointer",
   },
   spacer: {
     height: 80,
@@ -36,14 +28,6 @@ const useStyle = makeStyles(({ palette }: Theme) => ({
 
 export const MainPage = () => {
   const classes = useStyle()
-
-  const { i18n } = useTranslation()
-  const changeLanguageClick = useCallback(
-    (lng: "en" | "de") => {
-      i18n.changeLanguage(lng)
-    },
-    [i18n],
-  )
 
   return (
     <PageLayout>
@@ -252,43 +236,6 @@ export const MainPage = () => {
             </p>
           </div>
         </div>
-        <div>
-          <h2>
-            <Trans>Kontakt</Trans>
-          </h2>
-          <div>
-            <div>
-              <div>Lukas Rydzynski</div>
-
-              <div>Prangstraße 19</div>
-
-              <div>94437 Mamming</div>
-
-              <div>Tel +49 9951 30 90 870</div>
-
-              <div>Mobil +49 1577 870 70 79</div>
-
-              <div>lukas.rydzynski @deinvermögensberater.com</div>
-            </div>
-          </div>
-        </div>
-
-        <Stack spacing={2} direction={"row"} className={classes.languageSwitch}>
-          <span
-            className={classes.switch}
-            onClick={() => changeLanguageClick("en")}
-          >
-            EN
-          </span>
-          <span>|</span>
-          <span
-            className={classes.switch}
-            onClick={() => changeLanguageClick("de")}
-          >
-            DE
-          </span>
-        </Stack>
-        <div className={classes.spacer} />
       </div>
     </PageLayout>
   )
