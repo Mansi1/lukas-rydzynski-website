@@ -1,5 +1,5 @@
 import React from "react"
-import { Button, Typography } from "@mui/material"
+import { Button, Stack, Typography } from "@mui/material"
 import { getNsTrans } from "../../functions/getNsTrans"
 import backgroundImage from "../../assets/img/what-is-important.jpeg"
 import { useMedia } from "../../hooks/useMedia"
@@ -7,9 +7,73 @@ import { useMedia } from "../../hooks/useMedia"
 const Trans = getNsTrans("main")
 
 export const WhatIsImportant = () => {
-  const { mobile } = useMedia()
+  const { mobile, desktop } = useMedia()
   return (
     <div style={{}}>
+      {desktop && (
+        <Stack
+          direction={"row"}
+          spacing={2}
+          style={{
+            fontSize: 20,
+            fontWeight: "bold",
+            justifyContent: "center",
+            marginTop: -20,
+            marginBottom: 30,
+          }}
+        >
+          <div style={{ fontFamily: "Italiana" }}>
+            Vermögensberatung
+            <div
+              style={{
+                width: "100%",
+                borderTop: "1px solid black",
+                marginTop: -5,
+              }}
+            />
+          </div>
+          <div style={{ fontFamily: "Italiana" }}>
+            Über mich
+            <div
+              style={{
+                width: "100%",
+                borderTop: "1px solid black",
+                marginTop: -5,
+              }}
+            />
+          </div>
+          <div style={{ fontFamily: "Italiana" }}>
+            Mein Versprechen
+            <div
+              style={{
+                width: "100%",
+                borderTop: "1px solid black",
+                marginTop: -5,
+              }}
+            />
+          </div>
+          <div style={{ fontFamily: "Italiana" }}>
+            Beratungskonzept
+            <div
+              style={{
+                width: "100%",
+                borderTop: "1px solid black",
+                marginTop: -5,
+              }}
+            />
+          </div>
+          <div style={{ fontFamily: "Italiana" }}>
+            Kontakt
+            <div
+              style={{
+                width: "100%",
+                borderTop: "1px solid black",
+                marginTop: -5,
+              }}
+            />
+          </div>
+        </Stack>
+      )}
       <div
         style={{
           height: "100%",
