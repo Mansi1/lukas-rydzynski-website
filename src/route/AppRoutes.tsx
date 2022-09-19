@@ -1,7 +1,7 @@
 import React, { useLayoutEffect } from "react"
 import { Navigate, Route, Routes, useLocation } from "react-router-dom"
 import { IMPRESS_ROUTE, MAIN_ROUTE, NOT_FOUND_ROUTE } from "../routes"
-import { MainPage } from "../pages/Main"
+import { MainPage } from "../pages/main/Main"
 import { ImpressPage } from "../pages/Impress"
 
 export const AppRoutes = () => {

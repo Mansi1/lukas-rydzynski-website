@@ -1,8 +1,9 @@
 import React from "react"
-import { PageLayout } from "../components/PageLayout"
+import { PageLayout } from "../../components/PageLayout"
 import { makeStyles } from "@mui/styles"
 import { Button, Stack, Theme } from "@mui/material"
-import { getNsTrans } from "../functions/getNsTrans"
+import { getNsTrans } from "../../functions/getNsTrans"
+import { WhatIsImportant } from "./WhatIsImportant"
 
 const Trans = getNsTrans("main")
 
@@ -33,21 +34,7 @@ export const MainPage = () => {
     <PageLayout>
       <div className={classes.root}>
         <div>
-          <div>
-            <h2>
-              <Trans>Was ist Ihnen wichtig?</Trans>
-            </h2>
-            <p>
-              <Trans>
-                Jeder Mensch hat seine eigenen Träume, Hoffnungen und Ziele. Ich
-                helfe Ihnen dabei, Ihre Wünsche zu verwirklichen und finanzielle
-                Ziele zu erreichen.
-              </Trans>
-            </p>
-            <Button variant="outlined">
-              <Trans>Jetzt Beratungstermin vereinbaren</Trans>
-            </Button>
-          </div>
+          <WhatIsImportant />
           <div>
             <p>
               <Trans>

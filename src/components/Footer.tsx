@@ -7,6 +7,7 @@ import { getNsTrans } from "../functions/getNsTrans"
 import { useNavigate } from "react-router-dom"
 import { Theme } from "@mui/system"
 import { EMAIL, MOBILE, PHONE } from "../variables"
+import { useMedia } from "../hooks/useMedia"
 
 const Trans = getNsTrans("main")
 
@@ -18,7 +19,13 @@ const useStyle = makeStyles(({ palette, spacing }: Theme) => ({
   },
   name: { fontWeight: "bold", fontSize: 18 },
   privacyAndImpress: { textAlign: "center", fontSize: 12 },
-  contact: { textTransform: "uppercase", fontSize: 20, fontWeight: "bold" },
+  contactMobile: { textAlign: "center" },
+  contactTabletDesktop: { margin: "auto" },
+  contactHeader: {
+    textTransform: "uppercase",
+    fontSize: 20,
+    fontWeight: "bold",
+  },
   link: {
     color: "#fff",
   },
@@ -40,15 +47,21 @@ export const Footer = () => {
     },
     [i18n],
   )
-
+  const { mobile } = useMedia()
   return (
     <div className={classes.root}>
       <Stack spacing={4} direction={"column"}>
-        <Stack spacing={2} direction={"column"} style={{ margin: "auto" }}>
-          <div className={classes.contact}>
+        <Stack
+          spacing={2}
+          direction={"column"}
+          className={
+            mobile ? classes.contactMobile : classes.contactTabletDesktop
+          }
+        >
+          <div className={classes.contactHeader}>
             <Trans>Kontakt</Trans>
           </div>
-          <Stack spacing={4} direction={"row"}>
+          <Stack spacing={4} direction={mobile ? "column" : "row"}>
             <div>
               <div className={classes.name}>Lukas Rydzynski</div>
 
