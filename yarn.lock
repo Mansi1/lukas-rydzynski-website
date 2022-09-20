@@ -1559,10 +1559,10 @@
     dompurify "^2.3.1"
     html-react-parser "^1.2.8"
 
-"@mui-extra/icons@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@mui-extra/icons/-/icons-0.0.6.tgz#97e5dc564b176b847963054430e079bfe4e9ee16"
-  integrity sha512-/2IwjruzTgrxwbXB6SJNVQXUxfEPgRvwape81AdIPe7AKtRLtiaTPtbkRRNHyGElXzQo0zASOPNrMCpR9mGymg==
+"@mui-extra/icons@^0.0.26":
+  version "0.0.26"
+  resolved "https://registry.yarnpkg.com/@mui-extra/icons/-/icons-0.0.26.tgz#2f5d55a2fadb464d0893bc81678767f8b91e6214"
+  integrity sha512-unOcFYxav6UX+8jCorm6rk5ikjexXxN/szMGVrOJuvmJuJSG2rYwDvqk7gb3hsKiFPgLPDxK97J1hrJNgWrnWA==
 
 "@mui/base@5.0.0-alpha.65":
   version "5.0.0-alpha.65"

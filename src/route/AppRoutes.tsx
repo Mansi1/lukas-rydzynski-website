@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react"
+import React, { useEffect, useLayoutEffect } from "react"
 import { Navigate, Route, Routes, useLocation } from "react-router-dom"
 import { IMPRESS_ROUTE, MAIN_ROUTE, NOT_FOUND_ROUTE } from "../routes"
 import { MainPage } from "../pages/main/Main"
@@ -10,6 +10,21 @@ export const AppRoutes = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
   }, [location.pathname])
+
+  useEffect(() => {
+    const hash = window.location.hash
+    if (hash !== "") {
+      const id = hash.replace("#", "")
+      const element = document.getElementById(id)
+      if (element) {
+        window.scrollTo({
+          top: element.getBoundingClientRect().top,
+          behavior: "smooth",
+        })
+      }
+    }
+  }, [])
+
   return (
     <Routes>
       <Route path={MAIN_ROUTE} element={<MainPage />} />

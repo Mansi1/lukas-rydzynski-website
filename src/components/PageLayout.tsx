@@ -4,6 +4,7 @@ import { makeStyles } from "@mui/styles"
 import { Footer } from "./Footer"
 import { useTheme } from "@mui/system"
 import { Header } from "./Header"
+import { ScrollButton } from "./ScrollButton"
 
 const useStyle = makeStyles({
   root: {
@@ -18,6 +19,7 @@ export const PageLayout = ({ children }: PropsWithChildren<unknown>) => {
     <>
       <style>{`body { background-color: ${palette.background.default}}`}</style>
       <Container maxWidth={"lg"} className={classes.root}>
+        <ScrollButton />
         <Header />
         {children}
       </Container>

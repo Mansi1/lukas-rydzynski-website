@@ -19,7 +19,7 @@
     "@fontsource/raleway": "^4.5.10",
     "@fontsource/roboto": "^4.5.1",
     "@milkscout/react": "^1.0.35",
-    "@mui-extra/icons": "^0.0.6",
+    "@mui-extra/icons": "^0.0.26",
     "@mui/material": "^5.2.3",
     "@mui/styles": "^5.2.3",
     "@mui/system": "^5.2.3",

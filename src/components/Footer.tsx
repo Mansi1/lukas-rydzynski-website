@@ -1,6 +1,6 @@
 import React, { useCallback } from "react"
 import { Stack } from "@mui/material"
-import { IMPRESS_ROUTE } from "../routes"
+import { IMPRESS_ROUTE, MAIN_CONTACT_HASH } from "../routes"
 import { makeStyles } from "@mui/styles"
 import { useTranslation } from "react-i18next"
 import { getNsTrans } from "../functions/getNsTrans"
@@ -58,7 +58,7 @@ export const Footer = () => {
             mobile ? classes.contactMobile : classes.contactTabletDesktop
           }
         >
-          <div className={classes.contactHeader}>
+          <div id={MAIN_CONTACT_HASH} className={classes.contactHeader}>
             <Trans>Kontakt</Trans>
           </div>
           <Stack spacing={4} direction={mobile ? "column" : "row"}>
