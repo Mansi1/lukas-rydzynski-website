@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/lukas-rydzynski-website/static/css/main.36fc1fe3.css",
-    "main.js": "/lukas-rydzynski-website/static/js/main.3479743f.js",
+    "main.js": "/lukas-rydzynski-website/static/js/main.67802a3a.js",
     "static/js/787.e4fe72a3.chunk.js": "/lukas-rydzynski-website/static/js/787.e4fe72a3.chunk.js",
+    "static/media/profile.jpg": "/lukas-rydzynski-website/static/media/profile.b19de4221de81b122353.jpg",
     "static/media/what-is-important.jpeg": "/lukas-rydzynski-website/static/media/what-is-important.a6d0a8b895fd0786a2fc.jpeg",
+    "static/media/about-me.jpeg": "/lukas-rydzynski-website/static/media/about-me.6658c5e874c1ad0fa5f1.jpeg",
     "static/media/logo.png": "/lukas-rydzynski-website/static/media/logo.1df62cc591f66655f408.png",
     "static/media/raleway-all-600-normal.woff": "/lukas-rydzynski-website/static/media/raleway-all-600-normal.e9a98c9a0c352c633ffc.woff",
     "static/media/raleway-all-400-normal.woff": "/lukas-rydzynski-website/static/media/raleway-all-400-normal.98e7ff86f2b9a46e19cc.woff",
@@ -35,11 +37,11 @@
     "static/media/roboto-greek-ext-400-normal.woff2": "/lukas-rydzynski-website/static/media/roboto-greek-ext-400-normal.bb723e8458c9c653e505.woff2",
     "index.html": "/lukas-rydzynski-website/index.html",
     "main.36fc1fe3.css.map": "/lukas-rydzynski-website/static/css/main.36fc1fe3.css.map",
-    "main.3479743f.js.map": "/lukas-rydzynski-website/static/js/main.3479743f.js.map",
+    "main.67802a3a.js.map": "/lukas-rydzynski-website/static/js/main.67802a3a.js.map",
     "787.e4fe72a3.chunk.js.map": "/lukas-rydzynski-website/static/js/787.e4fe72a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.36fc1fe3.css",
-    "static/js/main.3479743f.js"
+    "static/js/main.67802a3a.js"
   ]
 }
