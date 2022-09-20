@@ -44,8 +44,10 @@ export const Essential = () => {
       <div
         style={{
           borderTop: "3px solid " + MAIN_COLOR,
-          minWidth: 250,
-          marginBottom: 30,
+          maxWidth: 250,
+          margin: "auto",
+          marginTop: 60,
+          marginBottom: 60,
         }}
       />
       <p style={{ color: MAIN_COLOR }}>

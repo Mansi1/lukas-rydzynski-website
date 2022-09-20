@@ -2,6 +2,7 @@ import { getNsTrans } from "../../functions/getNsTrans"
 import React from "react"
 import { Stack, Theme } from "@mui/material"
 import { MAIN_CONSULTING_CONCEPT_HASH } from "../../routes"
+
 import { makeStyles } from "@mui/styles"
 
 const useStyle = makeStyles(({ palette }: Theme) => ({
@@ -14,6 +15,10 @@ const useStyle = makeStyles(({ palette }: Theme) => ({
   wrapper: {
     maxWidth: 450,
     margin: "auto",
+  },
+  step: {
+    color: palette.secondary.main,
+    fontSize: 22,
   },
 }))
 const Trans = getNsTrans("main")
@@ -47,12 +52,21 @@ export const ConsultingConcept = () => {
             geht.
           </Trans>
         </p>
+        <div
+          style={{
+            borderTop: "3px solid #fff",
+            maxWidth: 250,
+            margin: "auto",
+            marginBottom: 60,
+            marginTop: 60,
+          }}
+        />
         <h2>
           <Trans>5 Schritte für eine Vertrauensvolle Partnerschaft</Trans>
         </h2>
-        <Stack direction="column" spacing={2}>
+        <Stack direction="column" spacing={2} style={{ fontFamily: "Raleway" }}>
           <div>
-            <div>
+            <div className={classes.step}>
               <Trans>1. Analyse</Trans>
             </div>
             <div>
@@ -62,7 +76,7 @@ export const ConsultingConcept = () => {
             </div>
           </div>
           <div>
-            <div>
+            <div className={classes.step}>
               <Trans>2. Planung</Trans>
             </div>
             <div>
@@ -70,7 +84,7 @@ export const ConsultingConcept = () => {
             </div>
           </div>
           <div>
-            <div>
+            <div className={classes.step}>
               <Trans>3. Beratung</Trans>
             </div>
             <div>
@@ -80,7 +94,7 @@ export const ConsultingConcept = () => {
             </div>
           </div>
           <div>
-            <div>
+            <div className={classes.step}>
               <Trans>4. Umsetzung</Trans>
             </div>
             <div>
@@ -88,7 +102,7 @@ export const ConsultingConcept = () => {
             </div>
           </div>
           <div>
-            <div>
+            <div className={classes.step}>
               <Trans>5. Partnerschaft</Trans>
             </div>
             <div>

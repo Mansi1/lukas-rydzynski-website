@@ -2,16 +2,18 @@ import React from "react"
 import { PageLayout } from "../components/PageLayout"
 import { makeStyles } from "@mui/styles"
 import { getNsTrans } from "../functions/getNsTrans"
+import { Theme } from "@mui/material"
 
 const Trans = getNsTrans("main")
 
-const useStyle = makeStyles({
+const useStyle = makeStyles(({ palette }: Theme) => ({
   root: {
     textAlign: "center",
     maxWidth: 360,
     margin: "auto",
+    color: palette.primary.main,
   },
-})
+}))
 
 export const ImpressPage = () => {
   const classes = useStyle()

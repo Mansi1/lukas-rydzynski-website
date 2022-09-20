@@ -42,7 +42,8 @@ export const AboutMe = () => {
           <div
             style={{
               borderTop: "3px solid orange",
-              minWidth: 250,
+              maxWidth: 250,
+              margin: "auto",
               marginBottom: 80,
             }}
           />
