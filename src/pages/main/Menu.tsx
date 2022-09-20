@@ -7,13 +7,14 @@ import { makeStyles } from "@mui/styles"
 import { getNsTrans } from "../../functions/getNsTrans"
 import {
   MAIN_ABOUT_ME_HASH,
+  MAIN_CONSULTING_CONCEPT_HASH,
   MAIN_CONTACT_HASH,
   MAIN_MY_PROMISE_HASH,
 } from "../../routes"
 
 const Trans = getNsTrans("main")
 
-const useStyle = makeStyles(({}: Theme) => ({
+const useStyle = makeStyles(({ palette }: Theme) => ({
   root: {
     fontSize: 20,
     fontWeight: "bold",
@@ -21,8 +22,16 @@ const useStyle = makeStyles(({}: Theme) => ({
     marginTop: -20,
     marginBottom: 30,
   },
-  link: { fontFamily: "Italiana", cursor: "pointer" },
-  underline: { width: "100%", borderTop: "1px solid black", marginTop: -5 },
+  link: {
+    fontFamily: "Italiana",
+    cursor: "pointer",
+    color: palette.primary.main,
+  },
+  underline: {
+    width: "100%",
+    borderTop: "1px solid " + palette.primary.main,
+    marginTop: -5,
+  },
 }))
 
 export const Menu = () => {
@@ -65,7 +74,7 @@ export const Menu = () => {
           </div>
           <div
             className={classes.link}
-            onClick={() => moveToElement(MAIN_CONTACT_HASH)}
+            onClick={() => moveToElement(MAIN_CONSULTING_CONCEPT_HASH)}
           >
             <Trans>Beratungskonzept</Trans>
             <div className={classes.underline} />

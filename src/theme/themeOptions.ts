@@ -1,5 +1,6 @@
 import "@fontsource/roboto"
 import "@fontsource/italiana"
+import "@fontsource/caveat"
 import "@fontsource/raleway"
 import "@fontsource/raleway/500.css"
 import "@fontsource/raleway/600.css"
@@ -32,9 +33,11 @@ export const getGlobalStyles = (theme: Theme): GlobalProps["styles"] => ({
     textDecoration: "none",
     cursor: "pointer",
   },
-  "*": { fontFamily: theme.typography.fontFamily },
+
+  "*": { fontFamily: "inherit" },
   h2: { fontSize: 28, fontFamily: "Italiana" },
+  h1: { fontSize: 35, fontFamily: "Italiana" },
   p: { fontSize: 18, fontFamily: "Raleway" },
-  body: { margin: 0, padding: 0 },
+  body: { margin: 0, padding: 0, fontFamily: theme.typography.fontFamily },
   html: { margin: 0, padding: 0 },
 })

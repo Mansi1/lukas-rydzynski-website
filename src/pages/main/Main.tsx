@@ -8,6 +8,9 @@ import { AboutMe } from "./AboutMe"
 import { Menu } from "./Menu"
 import { MyPromise } from "./MyPromise"
 import { ConsultingConcept } from "./ConsultingConcept"
+import { FormatQuoteOpenIcon } from "@mui-extra/icons/FormatQuoteOpenIcon"
+import { Essential } from "./Essential"
+import { MAIN_COLOR } from "../../theme/themeOptions"
 
 const Trans = getNsTrans("main")
 
@@ -40,29 +43,7 @@ export const MainPage = () => {
       <div className={classes.root}>
         <div>
           <WhatIsImportant />
-          <div>
-            <p>
-              <Trans>
-                Damit Sie sich aufs Wesentliche konzentrieren können:
-              </Trans>
-              <span> </span>
-              <Trans>Leben</Trans>
-              <span> </span>
-              <Trans>Familie</Trans>
-              <span> </span>
-              <Trans>Hobbies</Trans>
-              <span> </span>
-              <Trans>Beruf</Trans>
-            </p>
-            <p>
-              <Trans>
-                Mein ganzheitlicher Ansatz für die Vermögensverwaltung stellt
-                sicher, dass Ihre persönliche und berufliche Situation bei der
-                Entwicklung der passenden Strategie für Ihr Vermögen
-                berücksichtigt wird.
-              </Trans>
-            </p>
-          </div>
+          <Essential />
           <AboutMe />
 
           <div>
@@ -96,13 +77,24 @@ export const MainPage = () => {
           </div>
           <MyPromise />
           <ConsultingConcept />
-          <div>
-            <p>
+          <div style={{ marginTop: 50, marginBottom: 50 }}>
+            <FormatQuoteOpenIcon
+              style={{ height: 150, fontSize: 150, color: MAIN_COLOR }}
+            />
+            <p
+              style={{
+                maxWidth: 450,
+                fontSize: 28,
+                margin: "auto",
+                fontFamily: "Caveat",
+                color: MAIN_COLOR,
+              }}
+            >
               <Trans>
-                Jeder Kunde ist anders. Gemeinsam entwickle ich mit Ihnen ein
-                passgenaues Konzept. So haben Sie die Gewissheit, dass Ihre
-                Verträge aufeinander abgestimmt sind und Sie kein Geld
-                verschenken.
+                Jeder Kunde ist <b>anders</b>. Gemeinsam entwickle ich mit Ihnen
+                ein passgenaues Konzept. So haben Sie die Gewissheit, dass Ihre
+                Verträge aufeinander abgestimmt sind und Sie{" "}
+                <b>kein Geld verschenken</b>.
               </Trans>
             </p>
           </div>

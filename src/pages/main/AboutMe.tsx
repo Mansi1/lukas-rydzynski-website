@@ -4,6 +4,7 @@ import { MAIN_ABOUT_ME_HASH } from "../../routes"
 import backgroundImage from "../../assets/img/about-me.jpeg"
 import profileImage from "../../assets/img/profile.jpg"
 import { useMedia } from "../../hooks/useMedia"
+import { MAIN_COLOR } from "../../theme/themeOptions"
 
 const Trans = getNsTrans("main")
 
@@ -60,7 +61,7 @@ export const AboutMe = () => {
         alt={"profile picture"}
         style={{ maxWidth: 550, width: "100%", marginTop: -180 }}
       />
-      <div style={{ fontFamily: "Italiana", fontSize: 28 }}>
+      <div style={{ fontFamily: "Italiana", fontSize: 34, color: MAIN_COLOR }}>
         Lukas Rydzynski
       </div>
     </>
