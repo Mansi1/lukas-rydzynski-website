@@ -9,7 +9,7 @@ import { Theme } from "@mui/system"
 import { EMAIL, MOBILE, PHONE } from "../variables"
 import { useMedia } from "../hooks/useMedia"
 
-const Trans = getNsTrans("main")
+const Trans = getNsTrans("footer")
 
 const useStyle = makeStyles(({ palette, spacing }: Theme) => ({
   root: {

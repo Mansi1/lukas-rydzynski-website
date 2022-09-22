@@ -4,12 +4,18 @@ import { Stack, Theme } from "@mui/material"
 import { MAIN_CONSULTING_CONCEPT_HASH } from "../../routes"
 
 import { makeStyles } from "@mui/styles"
+const Trans = getNsTrans("consulting-concept")
 
 const useStyle = makeStyles(({ palette }: Theme) => ({
   root: {
+    fontWeight: 500,
     backgroundColor: palette.primary.main,
-    paddingTop: 60,
-    paddingBottom: 60,
+    paddingTop: 60 + 24,
+    paddingBottom: 60 + 24,
+    paddingLeft: 24,
+    paddingRight: 24,
+    marginLeft: -24,
+    marginRight: -24,
     color: "#fff",
   },
   wrapper: {
@@ -18,10 +24,12 @@ const useStyle = makeStyles(({ palette }: Theme) => ({
   },
   step: {
     color: palette.secondary.main,
-    fontSize: 22,
+    fontSize: 25,
+  },
+  stepDesc: {
+    fontSize: 18,
   },
 }))
-const Trans = getNsTrans("main")
 export const ConsultingConcept = () => {
   const classes = useStyle()
   return (
@@ -64,12 +72,16 @@ export const ConsultingConcept = () => {
         <h2>
           <Trans>5 Schritte für eine Vertrauensvolle Partnerschaft</Trans>
         </h2>
-        <Stack direction="column" spacing={2} style={{ fontFamily: "Raleway" }}>
+        <Stack
+          direction="column"
+          spacing={2}
+          style={{ fontFamily: "Raleway", paddingLeft: 50, paddingRight: 50 }}
+        >
           <div>
             <div className={classes.step}>
-              <Trans>1. Analyse</Trans>
+              1. <Trans>Analyse</Trans>
             </div>
-            <div>
+            <div className={classes.stepDesc}>
               <Trans>
                 Erfassen der ist Situation mit ihren Wünschen und Zielen
               </Trans>
@@ -77,17 +89,17 @@ export const ConsultingConcept = () => {
           </div>
           <div>
             <div className={classes.step}>
-              <Trans>2. Planung</Trans>
+              2. <Trans>Planung</Trans>
             </div>
-            <div>
+            <div className={classes.stepDesc}>
               <Trans>Auswertung und Vermögensplanung mit Qualitätssiegel</Trans>
             </div>
           </div>
           <div>
             <div className={classes.step}>
-              <Trans>3. Beratung</Trans>
+              3. <Trans>Beratung</Trans>
             </div>
-            <div>
+            <div className={classes.stepDesc}>
               <Trans>
                 Persönliche Beratung, abgestimmt auf Ihre Wünsche und Ziele
               </Trans>
@@ -95,17 +107,17 @@ export const ConsultingConcept = () => {
           </div>
           <div>
             <div className={classes.step}>
-              <Trans>4. Umsetzung</Trans>
+              4. <Trans>Umsetzung</Trans>
             </div>
-            <div>
+            <div className={classes.stepDesc}>
               <Trans>Realisierung Ihrer Vermögensplanung</Trans>
             </div>
           </div>
           <div>
             <div className={classes.step}>
-              <Trans>5. Partnerschaft</Trans>
+              5. <Trans>Partnerschaft</Trans>
             </div>
-            <div>
+            <div className={classes.stepDesc}>
               <Trans>Langfristige Partnerschaft</Trans>
             </div>
           </div>

@@ -1,11 +1,20 @@
 import React from "react"
 import { getNsTrans } from "../../functions/getNsTrans"
 import { MAIN_MY_PROMISE_HASH } from "../../routes"
-const Trans = getNsTrans("main")
+const Trans = getNsTrans("my-promise")
+import { makeStyles } from "@mui/styles"
+import { Theme } from "@mui/material"
 
+const useStyle = makeStyles(({}: Theme) => ({
+  root: {
+    maxWidth: 450,
+    margin: "auto",
+  },
+}))
 export const MyPromise = () => {
+  const classes = useStyle()
   return (
-    <div>
+    <div className={classes.root}>
       <h2 id={MAIN_MY_PROMISE_HASH}>
         <Trans>Mein Versprechen</Trans>
       </h2>

@@ -4,7 +4,7 @@ import { getNsTrans } from "../../functions/getNsTrans"
 import backgroundImage from "../../assets/img/what-is-important.jpeg"
 import { useMedia } from "../../hooks/useMedia"
 
-const Trans = getNsTrans("main")
+const Trans = getNsTrans("what-is-important")
 
 export const WhatIsImportant = () => {
   const { mobile } = useMedia()
@@ -36,7 +36,7 @@ export const WhatIsImportant = () => {
           <h2 style={{ marginBottom: 350 }}>
             <Trans>Was ist Ihnen wichtig?</Trans>
           </h2>
-          <p style={{ marginBottom: 30 }}>
+          <p style={{ marginBottom: 50, fontSize: 22 }}>
             <Trans>
               Jeder Mensch hat seine eigenen Träume, Hoffnungen und Ziele. Ich
               helfe Ihnen dabei, Ihre Wünsche zu verwirklichen und finanzielle
@@ -46,7 +46,7 @@ export const WhatIsImportant = () => {
           <Button
             variant="outlined"
             size={"large"}
-            style={{ color: "#fff", borderColor: "#fff" }}
+            style={{ color: "#fff", borderColor: "#fff", fontSize: 18 }}
           >
             <Trans>Jetzt Beratungstermin vereinbaren</Trans>
           </Button>

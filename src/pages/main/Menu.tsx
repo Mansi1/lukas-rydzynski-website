@@ -2,6 +2,7 @@ import React, { useCallback } from "react"
 import { Stack, Theme } from "@mui/material"
 import { useMedia } from "../../hooks/useMedia"
 import { useNavigate } from "react-router-dom"
+
 import { makeStyles } from "@mui/styles"
 
 import { getNsTrans } from "../../functions/getNsTrans"
@@ -11,8 +12,9 @@ import {
   MAIN_CONTACT_HASH,
   MAIN_MY_PROMISE_HASH,
 } from "../../routes"
+import { joinClasses } from "@milkscout/react"
 
-const Trans = getNsTrans("main")
+const Trans = getNsTrans("menu")
 
 const useStyle = makeStyles(({ palette }: Theme) => ({
   root: {
@@ -21,16 +23,16 @@ const useStyle = makeStyles(({ palette }: Theme) => ({
     justifyContent: "center",
     marginTop: -20,
     marginBottom: 30,
+    textDecoration: "underline",
+  },
+  rootMobile: {
+    textDecoration: "unset",
+    textAlign: "center",
   },
   link: {
     fontFamily: "Italiana",
     cursor: "pointer",
     color: palette.primary.main,
-  },
-  underline: {
-    width: "100%",
-    borderTop: "1px solid " + palette.primary.main,
-    marginTop: -5,
   },
 }))
 
@@ -56,38 +58,41 @@ export const Menu = () => {
 
   return (
     <div>
-      {!mobile && (
-        <Stack direction={"row"} spacing={2} className={classes.root}>
-          <div
-            className={classes.link}
-            onClick={() => moveToElement(MAIN_ABOUT_ME_HASH)}
-          >
+      <Stack
+        direction={mobile ? "column" : "row"}
+        spacing={2}
+        className={joinClasses({
+          [classes.root]: true,
+          [classes.rootMobile]: mobile,
+        })}
+      >
+        <span
+          className={classes.link}
+          onClick={() => moveToElement(MAIN_ABOUT_ME_HASH)}
+        >
+          <span>
             <Trans>Über mich</Trans>
-            <div className={classes.underline} />
-          </div>
-          <div
-            className={classes.link}
-            onClick={() => moveToElement(MAIN_MY_PROMISE_HASH)}
-          >
-            <Trans>Mein Versprechen</Trans>
-            <div className={classes.underline} />
-          </div>
-          <div
-            className={classes.link}
-            onClick={() => moveToElement(MAIN_CONSULTING_CONCEPT_HASH)}
-          >
-            <Trans>Beratungskonzept</Trans>
-            <div className={classes.underline} />
-          </div>
-          <div
-            className={classes.link}
-            onClick={() => moveToElement(MAIN_CONTACT_HASH)}
-          >
-            <Trans>Kontakt</Trans>
-            <div className={classes.underline} />
-          </div>
-        </Stack>
-      )}
+          </span>
+        </span>
+        <span
+          className={classes.link}
+          onClick={() => moveToElement(MAIN_MY_PROMISE_HASH)}
+        >
+          <Trans>Mein Versprechen</Trans>
+        </span>
+        <span
+          className={classes.link}
+          onClick={() => moveToElement(MAIN_CONSULTING_CONCEPT_HASH)}
+        >
+          <Trans>Beratungskonzept</Trans>
+        </span>
+        <span
+          className={classes.link}
+          onClick={() => moveToElement(MAIN_CONTACT_HASH)}
+        >
+          <Trans>Kontakt</Trans>
+        </span>
+      </Stack>
     </div>
   )
 }

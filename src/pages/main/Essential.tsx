@@ -2,7 +2,8 @@ import React, { ReactNode, useLayoutEffect, useState } from "react"
 import { NotProductionValues } from "@milkscout/react"
 import { getNsTrans } from "../../functions/getNsTrans"
 import { MAIN_COLOR } from "../../theme/themeOptions"
-const Trans = getNsTrans("main")
+
+const Trans = getNsTrans("essentails")
 
 const ESSENTIALS_ARRAY: Array<ReactNode> = [
   <Trans>Leben</Trans>,
@@ -26,7 +27,7 @@ export const Essential = () => {
   }, [setEssential])
 
   const essentialEl = ESSENTIALS_ARRAY[essential]
-  console.log({ essentialEl, essential })
+
   return (
     <div
       style={{

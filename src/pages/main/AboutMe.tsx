@@ -6,7 +6,7 @@ import profileImage from "../../assets/img/profile.jpg"
 import { useMedia } from "../../hooks/useMedia"
 import { MAIN_COLOR } from "../../theme/themeOptions"
 
-const Trans = getNsTrans("main")
+const Trans = getNsTrans("about-me")
 
 export const AboutMe = () => {
   const { mobile } = useMedia()

@@ -4,7 +4,7 @@ import { makeStyles } from "@mui/styles"
 import { getNsTrans } from "../functions/getNsTrans"
 import { Theme } from "@mui/material"
 
-const Trans = getNsTrans("main")
+const Trans = getNsTrans("impress-and-privacy")
 
 const useStyle = makeStyles(({ palette }: Theme) => ({
   root: {
