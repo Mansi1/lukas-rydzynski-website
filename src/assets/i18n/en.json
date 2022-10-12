@@ -1,4 +1,8 @@
 {
+  "spinner": {
+    "Ladevorgang": "Loading"
+  },
+
   "about-me": {
     "Meine Arbeit ist meine Leidenschaft. Dabei liegen mir in erster Linie die Wünsche und Interessen meiner Kunden am Herzen. Jede Situation ist individuell - daher gehe ich sie mit Herz und Verständnis an!": "My work is my passion. First and foremost, the wishes and interests of my customers are close to my heart. Every situation is individual - therefore I approach it with heart and understanding!",
     "Über mich": "About me"

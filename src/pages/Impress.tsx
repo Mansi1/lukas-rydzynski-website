@@ -68,3 +68,5 @@ export const ImpressPage = () => {
     </PageLayout>
   )
 }
+
+export default ImpressPage

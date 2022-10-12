@@ -2,6 +2,9 @@ import React from "react"
 import { Button, Theme } from "@mui/material"
 import { getNsTrans } from "../../functions/getNsTrans"
 import { makeStyles } from "@mui/styles"
+import { useNavigate } from "react-router-dom"
+import { MAIN_CONTACT_HASH } from "../../routes"
+import { navigateToId } from "../../functions/navigateToId"
 
 const Trans = getNsTrans("future")
 const useStyle = makeStyles(({}: Theme) => ({
@@ -13,6 +16,10 @@ const useStyle = makeStyles(({}: Theme) => ({
 
 export const ForYourFuture = () => {
   const classes = useStyle()
+  const navigate = useNavigate()
+
+  const moveToElement = navigateToId(navigate)
+
   return (
     <div className={classes.root}>
       <h2>
@@ -39,7 +46,10 @@ export const ForYourFuture = () => {
           Herzblut und Verständnis bei all meinen Handlungen.
         </Trans>
       </p>
-      <Button variant="outlined">
+      <Button
+        variant="outlined"
+        onClick={() => moveToElement(MAIN_CONTACT_HASH)}
+      >
         <Trans>Jetzt Kontakt aufnehmen</Trans>
       </Button>
     </div>

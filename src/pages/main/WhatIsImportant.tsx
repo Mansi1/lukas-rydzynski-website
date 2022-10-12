@@ -3,6 +3,8 @@ import { Button } from "@mui/material"
 import { getNsTrans } from "../../functions/getNsTrans"
 import backgroundImage from "../../assets/img/what-is-important.jpeg"
 import { useMedia } from "../../hooks/useMedia"
+import { FeatureToggle } from "../../components/FeatureToggle"
+import { ARRANGE_APPOINTMENT_FEATURE_KEY } from "../../variables"
 
 const Trans = getNsTrans("what-is-important")
 
@@ -43,13 +45,15 @@ export const WhatIsImportant = () => {
               Ziele zu erreichen.
             </Trans>
           </p>
-          <Button
-            variant="outlined"
-            size={"large"}
-            style={{ color: "#fff", borderColor: "#fff", fontSize: 18 }}
-          >
-            <Trans>Jetzt Beratungstermin vereinbaren</Trans>
-          </Button>
+          <FeatureToggle storageKey={ARRANGE_APPOINTMENT_FEATURE_KEY}>
+            <Button
+              variant="outlined"
+              size={"large"}
+              style={{ color: "#fff", borderColor: "#fff", fontSize: 18 }}
+            >
+              <Trans>Jetzt Beratungstermin vereinbaren</Trans>
+            </Button>
+          </FeatureToggle>
         </div>
         <div
           style={{

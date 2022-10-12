@@ -52,3 +52,5 @@ export const MainPage = () => {
     </PageLayout>
   )
 }
+
+export default MainPage

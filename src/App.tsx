@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React from "react"
+import React, { Suspense } from "react"
 import { BrowserRouter } from "react-router-dom"
 import de from "./assets/i18n/de.json"
 import en from "./assets/i18n/en.json"
@@ -10,6 +10,7 @@ import { getRouterBaseName } from "./functions/getRouterBaseName"
 import { AppRoutes } from "./route/AppRoutes"
 import { isFeatureEnabled } from "./components/FeatureToggle"
 import { LANGUAGE_ENGLISH_FEATURE_KEY } from "./variables"
+import { SuspenseFallback } from "./components/SuspenseFallback"
 
 initI18next(
   (() => {
@@ -24,18 +25,18 @@ initI18next(
   "de",
 )
 
-function App() {
+export const App = () => {
   const { i18n } = useTranslation()
 
   return (
     <ThemeProvider>
       <I18nextProvider i18n={i18n}>
-        <BrowserRouter basename={getRouterBaseName()}>
-          <AppRoutes />
-        </BrowserRouter>
+        <Suspense fallback={<SuspenseFallback />}>
+          <BrowserRouter basename={getRouterBaseName()}>
+            <AppRoutes />
+          </BrowserRouter>
+        </Suspense>
       </I18nextProvider>
     </ThemeProvider>
   )
 }
-
-export default App

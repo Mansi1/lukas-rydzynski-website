@@ -20,6 +20,7 @@ export const Header = () => {
         src={logoUrl}
         height={300}
         alt={"logo"}
+        loading={"eager"}
         onClick={() => navigate(MAIN_ROUTE)}
         className={classes.logo}
       />

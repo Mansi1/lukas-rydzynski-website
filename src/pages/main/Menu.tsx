@@ -1,4 +1,4 @@
-import React, { useCallback } from "react"
+import React from "react"
 import { Stack, Theme } from "@mui/material"
 import { useMedia } from "../../hooks/useMedia"
 import { useNavigate } from "react-router-dom"
@@ -13,6 +13,7 @@ import {
   MAIN_MY_PROMISE_HASH,
 } from "../../routes"
 import { joinClasses } from "@milkscout/react"
+import { navigateToId } from "../../functions/navigateToId"
 
 const Trans = getNsTrans("menu")
 
@@ -38,23 +39,10 @@ const useStyle = makeStyles(({ palette }: Theme) => ({
 
 export const Menu = () => {
   const { mobile } = useMedia()
-  const navigate = useNavigate()
   const classes = useStyle()
+  const navigate = useNavigate()
 
-  const moveToElement = useCallback(
-    (hash: string) => {
-      const id = hash.replace("#", "")
-      const element = document.getElementById(id)
-      if (element) {
-        navigate({ hash: hash })
-        window.scrollTo({
-          top: element.getBoundingClientRect().top,
-          behavior: "smooth",
-        })
-      }
-    },
-    [navigate],
-  )
+  const moveToElement = navigateToId(navigate)
 
   return (
     <div>

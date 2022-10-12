@@ -1,8 +1,9 @@
-import React, { useEffect, useLayoutEffect } from "react"
+import React, { lazy, useEffect, useLayoutEffect } from "react"
 import { Navigate, Route, Routes, useLocation } from "react-router-dom"
 import { IMPRESS_ROUTE, MAIN_ROUTE, NOT_FOUND_ROUTE } from "../routes"
-import { MainPage } from "../pages/main/Main"
-import { ImpressPage } from "../pages/Impress"
+import { scrollToId } from "../functions/scrollToId"
+const MainPage = lazy(() => import("../pages/main/Main"))
+const ImpressPage = lazy(() => import("../pages/Impress"))
 
 export const AppRoutes = () => {
   const location = useLocation()
@@ -14,14 +15,7 @@ export const AppRoutes = () => {
   useEffect(() => {
     const hash = window.location.hash
     if (hash !== "") {
-      const id = hash.replace("#", "")
-      const element = document.getElementById(id)
-      if (element) {
-        window.scrollTo({
-          top: element.getBoundingClientRect().top,
-          behavior: "smooth",
-        })
-      }
+      scrollToId(hash)
     }
   }, [])
 

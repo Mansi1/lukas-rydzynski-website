@@ -60,6 +60,7 @@ export const AboutMe = () => {
       <img
         src={profileImage}
         alt={"profile picture"}
+        loading={"lazy"}
         style={{ maxWidth: 550, width: "100%", marginTop: -180 }}
       />
       <div style={{ fontFamily: "Italiana", fontSize: 34, color: MAIN_COLOR }}>
