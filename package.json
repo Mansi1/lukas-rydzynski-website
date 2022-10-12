@@ -7,7 +7,7 @@
     "prepare": "husky install",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "mkdir build/ && cp -rf src/assets/i18n build/i18n",
+    "postbuild": "cp -rf src/assets/i18n build/i18n",
     "test": "react-scripts test --coverage --watchAll=false",
     "test:watch": "yarn test --watchAll=true",
     "check:i18n": "node translation.js",
