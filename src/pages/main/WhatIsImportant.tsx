@@ -43,7 +43,7 @@ const useStyle = makeStyles(({ palette }: Theme) => ({
   text: { marginBottom: 50, fontSize: 22, textShadow: "2px 2px #000" },
   button: {
     color: "#fff",
-    borderColor: "#fff",
+    borderColor: "#fff !important",
     fontSize: 18,
     textShadow: "2px 2px #000",
   },
