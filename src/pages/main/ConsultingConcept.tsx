@@ -4,6 +4,9 @@ import { Stack, Theme } from "@mui/material"
 import { MAIN_CONSULTING_CONCEPT_HASH } from "../../routes"
 
 import { makeStyles } from "@mui/styles"
+import { useMedia } from "../../hooks/useMedia"
+import { joinClasses } from "@milkscout/react"
+
 const Trans = getNsTrans("consulting-concept")
 
 const useStyle = makeStyles(({ palette }: Theme) => ({
@@ -18,9 +21,20 @@ const useStyle = makeStyles(({ palette }: Theme) => ({
     marginRight: -24,
     color: "#fff",
   },
+  rootMobile: {
+    paddingLeft: 16,
+    paddingRight: 16,
+    marginLeft: -16,
+    marginRight: -16,
+  },
   wrapper: {
     maxWidth: 450,
     margin: "auto",
+  },
+  rootStep: {
+    fontFamily: "Raleway",
+    paddingLeft: 50,
+    paddingRight: 50,
   },
   step: {
     color: palette.secondary.main,
@@ -29,11 +43,24 @@ const useStyle = makeStyles(({ palette }: Theme) => ({
   stepDesc: {
     fontSize: 18,
   },
+  divider: {
+    borderTop: "3px solid #fff",
+    maxWidth: 250,
+    margin: "auto",
+    marginBottom: 60,
+    marginTop: 60,
+  },
 }))
 export const ConsultingConcept = () => {
   const classes = useStyle()
+  const { mobile } = useMedia()
   return (
-    <div className={classes.root}>
+    <div
+      className={joinClasses({
+        [classes.root]: true,
+        [classes.rootMobile]: mobile,
+      })}
+    >
       <div className={classes.wrapper}>
         <h2 id={MAIN_CONSULTING_CONCEPT_HASH}>
           <Trans>Beratungskonzept</Trans>
@@ -60,23 +87,11 @@ export const ConsultingConcept = () => {
             geht.
           </Trans>
         </p>
-        <div
-          style={{
-            borderTop: "3px solid #fff",
-            maxWidth: 250,
-            margin: "auto",
-            marginBottom: 60,
-            marginTop: 60,
-          }}
-        />
+        <div className={classes.divider} />
         <h2>
           <Trans>5 Schritte für eine Vertrauensvolle Partnerschaft</Trans>
         </h2>
-        <Stack
-          direction="column"
-          spacing={2}
-          style={{ fontFamily: "Raleway", paddingLeft: 50, paddingRight: 50 }}
-        >
+        <Stack direction="column" spacing={2} className={classes.rootStep}>
           <div>
             <div className={classes.step}>
               1. <Trans>Analyse</Trans>

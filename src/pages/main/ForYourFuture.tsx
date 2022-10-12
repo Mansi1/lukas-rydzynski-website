@@ -12,6 +12,9 @@ const useStyle = makeStyles(({}: Theme) => ({
     maxWidth: 450,
     margin: "auto",
   },
+  button: {
+    fontSize: 22,
+  },
 }))
 
 export const ForYourFuture = () => {
@@ -48,6 +51,7 @@ export const ForYourFuture = () => {
       </p>
       <Button
         variant="outlined"
+        className={classes.button}
         onClick={() => moveToElement(MAIN_CONTACT_HASH)}
       >
         <Trans>Jetzt Kontakt aufnehmen</Trans>

@@ -8,7 +8,7 @@ const useStyle = makeStyles({
   root: {
     textAlign: "center",
   },
-  logo: { cursor: "pointer" },
+  logo: { cursor: "pointer", maxHeight: 300, maxWidth: "100%" },
 })
 
 export const Header = () => {
@@ -18,7 +18,6 @@ export const Header = () => {
     <div className={classes.root}>
       <img
         src={logoUrl}
-        height={300}
         alt={"logo"}
         loading={"eager"}
         onClick={() => navigate(MAIN_ROUTE)}

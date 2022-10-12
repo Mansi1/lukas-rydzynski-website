@@ -1,10 +1,27 @@
 import React, { ReactNode, useLayoutEffect, useState } from "react"
 import { NotProductionValues } from "@milkscout/react"
 import { getNsTrans } from "../../functions/getNsTrans"
-import { MAIN_COLOR } from "../../theme/themeOptions"
+import { makeStyles } from "@mui/styles"
+import { Theme } from "@mui/material"
+import { Divider } from "../../components/Divider"
 
 const Trans = getNsTrans("essentails")
 
+const useStyle = makeStyles(({ palette }: Theme) => ({
+  root: {
+    maxWidth: 450,
+    margin: "auto",
+    marginTop: 80,
+    marginBottom: 80,
+  },
+  header: { color: palette.primary.main },
+  essential: { color: palette.secondary.main },
+  content: {
+    paddingTop: 30,
+    color: palette.primary.main,
+    fontSize: 22,
+  },
+}))
 const ESSENTIALS_ARRAY: Array<ReactNode> = [
   <Trans>Leben</Trans>,
   <Trans>Familie</Trans>,
@@ -17,6 +34,7 @@ const getRandomNumber = () => {
 }
 export const Essential = () => {
   const [essential, setEssential] = useState<number>(getRandomNumber())
+  const classes = useStyle()
 
   useLayoutEffect(() => {
     const intervalListener = () => {
@@ -29,29 +47,14 @@ export const Essential = () => {
   const essentialEl = ESSENTIALS_ARRAY[essential]
 
   return (
-    <div
-      style={{
-        maxWidth: 450,
-        margin: "auto",
-        marginTop: 80,
-        marginBottom: 80,
-      }}
-    >
-      <h2 style={{ color: MAIN_COLOR }}>
+    <div className={classes.root}>
+      <h2 className={classes.header}>
         <Trans>Damit Sie sich aufs Wesentliche konzentrieren können:</Trans>
         <br />
-        <span style={{ color: "orange" }}>{essentialEl}</span>
+        <span className={classes.essential}>{essentialEl}</span>
       </h2>
-      <div
-        style={{
-          borderTop: "3px solid " + MAIN_COLOR,
-          maxWidth: 250,
-          margin: "auto",
-          marginTop: 60,
-          marginBottom: 60,
-        }}
-      />
-      <p style={{ color: MAIN_COLOR }}>
+      <Divider />
+      <p className={classes.content}>
         <Trans>
           Mein ganzheitlicher Ansatz für die Vermögensverwaltung stellt sicher,
           dass Ihre persönliche und berufliche Situation bei der Entwicklung der

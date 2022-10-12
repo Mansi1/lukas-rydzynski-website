@@ -7,10 +7,12 @@ import { getNsTrans } from "../functions/getNsTrans"
 import { useNavigate } from "react-router-dom"
 import { Theme } from "@mui/system"
 import {
+  CITY,
   EMAIL,
   LANGUAGE_ENGLISH_FEATURE_KEY,
   MOBILE,
-  PHONE,
+  NAME,
+  STREET,
 } from "../variables"
 import { useMedia } from "../hooks/useMedia"
 import { FeatureToggle } from "./FeatureToggle"
@@ -69,18 +71,13 @@ export const Footer = () => {
           </div>
           <Stack spacing={4} direction={mobile ? "column" : "row"}>
             <div>
-              <div className={classes.name}>Lukas Rydzynski</div>
+              <div className={classes.name}>{NAME}</div>
 
-              <div>Prangstraße 19</div>
+              <div>{STREET}</div>
 
-              <div>94437 Mamming</div>
+              <div>{CITY}</div>
             </div>
             <div>
-              <div>
-                <a href={`tel:${PHONE}`} className={classes.link}>
-                  Tel: {PHONE}
-                </a>
-              </div>
               <div>
                 <a href={`tel:${MOBILE}`} className={classes.link}>
                   Mobile: {MOBILE}

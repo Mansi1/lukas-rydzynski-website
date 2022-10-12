@@ -14,6 +14,9 @@ const useStyle = makeStyles(({ palette }: Theme) => ({
     margin: "auto",
     color: palette.primary.main,
   },
+  notTranslated: {
+    fontSize: 10,
+  },
 }))
 
 export const ImpressPage = () => {
@@ -24,6 +27,9 @@ export const ImpressPage = () => {
       <div className={classes.root}>
         <h2>
           <Trans>Impressum & Datenschutz</Trans>
+          <div className={classes.notTranslated}>
+            <Trans>Dies wird nicht übersetzt</Trans>
+          </div>
         </h2>
         <h3>Angaben Gemäß § 5 TMG:</h3>
         <h3>Büro für Deutsche Vermögensberatung</h3>

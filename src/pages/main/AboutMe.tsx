@@ -4,50 +4,77 @@ import { MAIN_ABOUT_ME_HASH } from "../../routes"
 import backgroundImage from "../../assets/img/about-me.jpeg"
 import profileImage from "../../assets/img/profile.jpg"
 import { useMedia } from "../../hooks/useMedia"
-import { MAIN_COLOR } from "../../theme/themeOptions"
+import { makeStyles } from "@mui/styles"
+import { Theme } from "@mui/material"
+import { joinClasses } from "@milkscout/react"
+import { NAME } from "../../variables"
+import { Divider } from "../../components/Divider"
 
+const useStyle = makeStyles(({ palette }: Theme) => ({
+  root: {
+    height: "100%",
+    backgroundImage: `url(${backgroundImage})`,
+    color: "#fff",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    display: "grid",
+    placeItems: "center",
+    marginRight: -24,
+    marginLeft: -24,
+  },
+  rootMobile: {
+    marginRight: -16,
+    marginLeft: -16,
+  },
+  content: {
+    maxWidth: 450,
+    paddingTop: 150,
+    paddingBottom: 250,
+    marginRight: 24,
+    marginLeft: 24,
+  },
+  contentMobile: {
+    marginRight: 16,
+    marginLeft: 16,
+  },
+  textHeader: { textShadow: "2px 2px #000" },
+  text: {
+    paddingTop: 50,
+    fontSize: 22,
+    textShadow: "2px 2px #000",
+  },
+  profileImage: { maxWidth: 550, width: "100%", marginTop: -180 },
+  name: {
+    fontFamily: "Italiana",
+    fontSize: 34,
+    color: palette.primary.main,
+  },
+}))
 const Trans = getNsTrans("about-me")
-
 export const AboutMe = () => {
   const { mobile } = useMedia()
+  const classes = useStyle()
   return (
     <>
       <div
         id={MAIN_ABOUT_ME_HASH}
-        style={{
-          height: "100%",
-          backgroundImage: `url(${backgroundImage})`,
-          color: "#fff",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          display: "grid",
-          placeItems: "center",
-          marginRight: -(mobile ? 16 : 24),
-          marginLeft: -(mobile ? 16 : 24),
-        }}
+        className={joinClasses({
+          [classes.root]: true,
+          [classes.rootMobile]: mobile,
+        })}
       >
         <div
-          style={{
-            maxWidth: 450,
-            paddingTop: 150,
-            paddingBottom: 250,
-            paddingRight: mobile ? 16 : 24,
-            paddingLeft: mobile ? 16 : 24,
-          }}
+          className={joinClasses({
+            [classes.content]: true,
+            [classes.contentMobile]: mobile,
+          })}
         >
-          <h2>
+          <h2 className={classes.textHeader}>
             <Trans>Über mich</Trans>
           </h2>
-          <div
-            style={{
-              borderTop: "3px solid orange",
-              maxWidth: 250,
-              margin: "auto",
-              marginBottom: 80,
-            }}
-          />
-          <p>
+          <Divider variant={"secondary"} />
+          <p className={classes.text}>
             <Trans>
               Meine Arbeit ist meine Leidenschaft. Dabei liegen mir in erster
               Linie die Wünsche und Interessen meiner Kunden am Herzen. Jede
@@ -61,11 +88,9 @@ export const AboutMe = () => {
         src={profileImage}
         alt={"profile picture"}
         loading={"lazy"}
-        style={{ maxWidth: 550, width: "100%", marginTop: -180 }}
+        className={classes.profileImage}
       />
-      <div style={{ fontFamily: "Italiana", fontSize: 34, color: MAIN_COLOR }}>
-        Lukas Rydzynski
-      </div>
+      <div className={classes.name}>{NAME}</div>
     </>
   )
 }

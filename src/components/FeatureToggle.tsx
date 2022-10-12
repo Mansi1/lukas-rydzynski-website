@@ -9,8 +9,12 @@ const useStyle = makeStyles(({}: Theme) => ({
   },
 }))
 
-export const isFeatureEnabled = (storageKey: string) =>
-  !!localStorage.getItem(storageKey)
+export const isFeatureEnabled = (storageKey: string) => {
+  if (process.env.NODE_ENV !== "production") {
+    return true
+  }
+  return !!localStorage.getItem(storageKey)
+}
 
 export interface FeatureToggleProps {
   storageKey: string

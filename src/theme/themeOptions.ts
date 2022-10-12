@@ -37,7 +37,14 @@ export const getGlobalStyles = (theme: Theme): GlobalProps["styles"] => ({
   "*": { fontFamily: "inherit" },
   h2: { fontSize: 28, fontFamily: "Italiana" },
   h1: { fontSize: 35, fontFamily: "Italiana" },
-  p: { fontSize: 18, fontFamily: "Raleway" },
-  body: { margin: 0, padding: 0, fontFamily: theme.typography.fontFamily },
-  html: { margin: 0, padding: 0 },
+  p: { fontSize: 22, fontFamily: "Raleway" },
+  body: {
+    margin: 0,
+    padding: 0,
+    height: "100%",
+    width: "100%",
+    fontFamily: theme.typography.fontFamily,
+  },
+  html: { margin: 0, padding: 0, height: "100%", width: "100%" },
+  "#root": { height: "100%", width: "100%" },
 })
