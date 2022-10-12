@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lukas-rydzynski-website/static/css/main.74c365ab.css",
-    "main.js": "/lukas-rydzynski-website/static/js/main.da3e90cb.js",
+    "main.js": "/lukas-rydzynski-website/static/js/main.b2d968ee.js",
     "static/js/787.e4fe72a3.chunk.js": "/lukas-rydzynski-website/static/js/787.e4fe72a3.chunk.js",
     "static/media/profile.jpg": "/lukas-rydzynski-website/static/media/profile.b19de4221de81b122353.jpg",
     "static/media/what-is-important.jpeg": "/lukas-rydzynski-website/static/media/what-is-important.a6d0a8b895fd0786a2fc.jpeg",
@@ -42,11 +42,11 @@
     "static/media/roboto-greek-ext-400-normal.woff2": "/lukas-rydzynski-website/static/media/roboto-greek-ext-400-normal.bb723e8458c9c653e505.woff2",
     "index.html": "/lukas-rydzynski-website/index.html",
     "main.74c365ab.css.map": "/lukas-rydzynski-website/static/css/main.74c365ab.css.map",
-    "main.da3e90cb.js.map": "/lukas-rydzynski-website/static/js/main.da3e90cb.js.map",
+    "main.b2d968ee.js.map": "/lukas-rydzynski-website/static/js/main.b2d968ee.js.map",
     "787.e4fe72a3.chunk.js.map": "/lukas-rydzynski-website/static/js/787.e4fe72a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.74c365ab.css",
-    "static/js/main.da3e90cb.js"
+    "static/js/main.b2d968ee.js"
   ]
 }
