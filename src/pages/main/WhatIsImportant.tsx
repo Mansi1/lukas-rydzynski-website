@@ -40,11 +40,11 @@ const useStyle = makeStyles(({ palette }: Theme) => ({
     paddingLeft: 16,
   },
   textHeader: { marginBottom: 350, textShadow: "2px 2px #000" },
-  text: { marginBottom: 50, fontSize: 22, textShadow: "2px 2px #000" },
+  text: { marginBottom: 50, textShadow: "2px 2px #000" },
   button: {
     color: "#fff",
     borderColor: "#fff !important",
-    fontSize: 18,
+    fontSize: 22,
     textShadow: "2px 2px #000",
   },
   divider: {

@@ -41,7 +41,6 @@ const useStyle = makeStyles(({ palette }: Theme) => ({
   textHeader: { textShadow: "2px 2px #000" },
   text: {
     paddingTop: 50,
-    fontSize: 22,
     textShadow: "2px 2px #000",
   },
   profileImage: { maxWidth: 550, width: "100%", marginTop: -180 },

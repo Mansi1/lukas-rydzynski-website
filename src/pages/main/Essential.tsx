@@ -19,7 +19,6 @@ const useStyle = makeStyles(({ palette }: Theme) => ({
   content: {
     paddingTop: 30,
     color: palette.primary.main,
-    fontSize: 22,
   },
 }))
 const ESSENTIALS_ARRAY: Array<ReactNode> = [
