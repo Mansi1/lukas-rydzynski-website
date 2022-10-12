@@ -3,6 +3,7 @@ import { PageLayout } from "../components/PageLayout"
 import { makeStyles } from "@mui/styles"
 import { getNsTrans } from "../functions/getNsTrans"
 import { Theme } from "@mui/material"
+import { ADDRESS, EMAIL, MOBILE } from "../variables"
 
 const Trans = getNsTrans("impress-and-privacy")
 
@@ -25,44 +26,50 @@ export const ImpressPage = () => {
           <Trans>Impressum & Datenschutz</Trans>
         </h2>
         <h3>Angaben Gemäß § 5 TMG:</h3>
-        <p>Büro für Deutsche Vermögensberatung Lukas Rydzynski</p>
-        <h3>Postanschrift:</h3>
-        <p>Prangstraße 19 94437 Mamming</p>
-        <h3>Kontakt</h3>
-        <p>Telefon: 0049 9951 30 90 870</p>
-        <p>Mobil: 0049 157 78 70 70 79</p>
-        <p>Telefax: 0049 9955 93 39 771</p>
-        <p>E-Mail: lukas.rydzynski@deinvermögensberater.com</p>
-        <h3>Aufsichtsbehörde</h3>
+        <h3>Büro für Deutsche Vermögensberatung</h3>
         <p>
-          Erlaubnis- und Aufsichtsbehörde gemäß § 34c GewO: IHK für München u.
-          Oberbayern, Max Joseph-Str. 2, 80333 München Registerstelle für § 34d
-          GewO: Deutscher Industrie- und Handelskammertag (DIHK) e. V. Breite
-          Straße 29, 10178 Berlin, Telefon 0180 600585-0 (20 Cent/Anruf aus dem
-          deutschen Festnetz, höchstens 60 Cent/Anruf aus Mobilfunknetzen)
-          www.vermittlerregister.info
+          {ADDRESS}
+          <br />
+          Mobil: {MOBILE}
+          <br />
+          E-Mail: {EMAIL}
         </p>
-        <h3>Hinweise zur Webseite:</h3>
-        <p>Information gemäß § 36 VSBG</p>
         <p>
-          Gemäß § 36 VSBG
-          <br />
-          <br />
-          (Verbraucherstreitbeilegungsgesetz - Gesetz über die alternative
-          Streitbeilegung in Verbrauchersachen) erklärt der Betreiber dieser
-          Website:
-          <br />
-          <br />
-          Wir sind verpflichtet, an Streitbeilegungsverfahren bei der folgenden
-          Verbraucherschlichtungsstelle teilzunehmen:
-          <br />
-          <br />
-          Verein Versicherungsombudsmann e. V. Postfach 080632, 10006 Berlin
+          Im Versicherungsbereich als gebundener Vermittler gemäß § 34d Abs. 7
+          GewO auf Provisionsbasis ausschließlich vermittelnd und beratend tätig
+          für die Generali Deutschland Lebensversicherung, Generali Deutschland
+          Versicherung, Generali Deutschland Krankenversicherung, Generali
+          Pensionskasse, ADVOCARD Rechtsschutzversicherung. Darüber hinaus
+          können in Einzelfällen geldwerte Vorteile in Form von Sachleistungen
+          anfallen (z.B. Schulungen sowie Einladungen für die Teilnahme an
+          kulturellen und gesellschaftlichen Veranstaltungen,
+          Informationsmaterial, Aufmerksamkeiten).
+        </p>
+        <h3>Schlichtungsstellen</h3>
+        <p>
+          Verein Versicherungsombudsmann e.V. Postfach 080632, 10006 Berlin
           Ombudsmann Private Kranken- und Pflegeversicherung Postfach 060222,
           10052 Berlin www.versicherungsombudsmann.de, www.pkv-ombudsmann.de
-          <br />
-          Das Impressum wurde mit dem Impressums Generator der activeMind AG
-          erstellt.
+        </p>
+        <h3>Erlaubnis- und Aufsichtsbehörde gemäß § 34c GewO</h3>
+        <p>IHK für München u. Oberbayern, Max-Joseph-Str. 2, 80333 München</p>
+        <p>
+          Registerstelle für § 34d GewO: Deutscher Industrie- und
+          Handelskammertag (DIHK) e.V. Breite Straße 29, 10178 Berlin, Telefon
+          0180 600585-0 (20 Cent/Anruf) www.vermittlerregister.info
+          Registernummer nach § 34d GewO: D-SQFC-IEYJS-45
+        </p>
+        <h3>Haftungshinweis</h3>
+        <p>
+          Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung
+          für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten
+          sind ausschließlich deren Betreiber verantwortlich. Die
+          Vermögensberater nehmen keine Kundengelder entgegen. Zahlungen
+          erfolgen direkt von den Kunden an die jeweiligen Produktpartner.
+        </p>
+        <p>
+          Informationen zur Verarbeitung Ihrer personenbezogenen Daten finden
+          Sie unter www.datenschutz.dvag.
         </p>
       </div>
     </PageLayout>
