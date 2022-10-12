@@ -7,13 +7,20 @@ import { I18nextProvider, useTranslation } from "react-i18next"
 import { ThemeProvider } from "./theme/ThemeProvider"
 import { getRouterBaseName } from "./functions/getRouterBaseName"
 import { AppRoutes } from "./route/AppRoutes"
+import { isFeatureEnabled } from "./components/FeatureToggle"
+import { LANGUAGE_ENGLISH_FEATURE_KEY } from "./variables"
 
 initI18next(
-  {
-    de,
-    en,
-  },
-  "en",
+  (() => {
+    const translations: Record<string, any> = {
+      de,
+    }
+    if (isFeatureEnabled(LANGUAGE_ENGLISH_FEATURE_KEY)) {
+      translations.en = en
+    }
+    return translations
+  })(),
+  "de",
 )
 
 function App() {

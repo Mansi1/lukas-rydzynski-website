@@ -6,8 +6,14 @@ import { useTranslation } from "react-i18next"
 import { getNsTrans } from "../functions/getNsTrans"
 import { useNavigate } from "react-router-dom"
 import { Theme } from "@mui/system"
-import { EMAIL, MOBILE, PHONE } from "../variables"
+import {
+  EMAIL,
+  LANGUAGE_ENGLISH_FEATURE_KEY,
+  MOBILE,
+  PHONE,
+} from "../variables"
 import { useMedia } from "../hooks/useMedia"
+import { FeatureToggle } from "./FeatureToggle"
 
 const Trans = getNsTrans("footer")
 
@@ -93,21 +99,27 @@ export const Footer = () => {
             <Trans>Impressum & Datenschutz</Trans>
           </a>
         </div>
-        <Stack spacing={2} direction={"row"} className={classes.languageSwitch}>
-          <span
-            className={classes.switch}
-            onClick={() => changeLanguageClick("en")}
+        <FeatureToggle storageKey={LANGUAGE_ENGLISH_FEATURE_KEY}>
+          <Stack
+            spacing={2}
+            direction={"row"}
+            className={classes.languageSwitch}
           >
-            EN
-          </span>
-          <span>|</span>
-          <span
-            className={classes.switch}
-            onClick={() => changeLanguageClick("de")}
-          >
-            DE
-          </span>
-        </Stack>
+            <span
+              className={classes.switch}
+              onClick={() => changeLanguageClick("de")}
+            >
+              DE
+            </span>
+            <span>|</span>
+            <span
+              className={classes.switch}
+              onClick={() => changeLanguageClick("en")}
+            >
+              EN
+            </span>
+          </Stack>
+        </FeatureToggle>
       </Stack>
     </div>
   )
