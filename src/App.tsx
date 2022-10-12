@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react"
 import { BrowserRouter } from "react-router-dom"
 import de from "./assets/i18n/de.json"
