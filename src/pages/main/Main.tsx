@@ -1,7 +1,6 @@
 import React from "react"
 import { PageLayout } from "../../components/PageLayout"
 import { makeStyles } from "@mui/styles"
-import { Theme } from "@mui/material"
 import { WhatIsImportant } from "./WhatIsImportant"
 import { AboutMe } from "./AboutMe"
 import { Menu } from "./Menu"
@@ -10,26 +9,29 @@ import { ConsultingConcept } from "./ConsultingConcept"
 import { Essential } from "./Essential"
 import { Individuality } from "./Individuality"
 import { ForYourFuture } from "./ForYourFuture"
+import backgroundImage from "../../assets/img/my-promise.jpeg"
 
-const useStyle = makeStyles(({ palette }: Theme) => ({
+const useStyle = makeStyles({
   root: {
     textAlign: "center",
   },
-  spacer: {
-    height: 80,
+  imageWrapper: {
+    marginLeft: -16,
+    marginRight: -16,
+    marginBottom: 80,
+    marginTop: 80,
   },
-  text: { fontWeight: "bold", fontSize: 18 },
-  primary: {
-    fontWeight: "bold",
-    fontSize: 18,
-    color: palette.primary.main,
+  image: {
+    width: "100%",
+    backgroundImage: `url(${backgroundImage})`,
+    minHeight: 350,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    display: "grid",
+    placeItems: "center",
   },
-  secondary: {
-    fontWeight: "bold",
-    fontSize: 18,
-    color: palette.secondary.main,
-  },
-}))
+})
 
 export const MainPage = () => {
   const classes = useStyle()
@@ -44,6 +46,10 @@ export const MainPage = () => {
           <AboutMe />
 
           <ForYourFuture />
+          <div className={classes.imageWrapper}>
+            <div className={classes.image} />
+          </div>
+
           <MyPromise />
           <ConsultingConcept />
           <Individuality />
