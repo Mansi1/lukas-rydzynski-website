@@ -15,7 +15,7 @@ const useStyle = makeStyles(({ palette }: Theme) => ({
     color: palette.primary.main,
   },
   notTranslated: {
-    fontSize: 10,
+    fontSize: 14,
   },
 }))
 
