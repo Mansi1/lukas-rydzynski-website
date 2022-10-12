@@ -19,7 +19,7 @@ const Trans = getNsTrans("menu")
 
 const useStyle = makeStyles(({ palette }: Theme) => ({
   root: {
-    fontSize: 20,
+    fontSize: 28,
     fontWeight: "bold",
     justifyContent: "center",
     marginTop: -20,
