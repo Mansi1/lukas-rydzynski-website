@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/lukas-rydzynski-website/static/css/main.74c365ab.css",
-    "main.js": "/lukas-rydzynski-website/static/js/main.e636b81a.js",
-    "static/js/92.37a223fa.chunk.js": "/lukas-rydzynski-website/static/js/92.37a223fa.chunk.js",
+    "main.js": "/lukas-rydzynski-website/static/js/main.db915410.js",
+    "static/js/824.f7d33965.chunk.js": "/lukas-rydzynski-website/static/js/824.f7d33965.chunk.js",
     "static/js/369.65c8323b.chunk.js": "/lukas-rydzynski-website/static/js/369.65c8323b.chunk.js",
     "static/js/787.e4fe72a3.chunk.js": "/lukas-rydzynski-website/static/js/787.e4fe72a3.chunk.js",
     "static/js/122.b95d148c.chunk.js": "/lukas-rydzynski-website/static/js/122.b95d148c.chunk.js",
+    "static/js/102.528fad5e.chunk.js": "/lukas-rydzynski-website/static/js/102.528fad5e.chunk.js",
     "static/media/what-is-important.jpeg": "/lukas-rydzynski-website/static/media/what-is-important.a6d0a8b895fd0786a2fc.jpeg",
     "static/media/about-me.jpeg": "/lukas-rydzynski-website/static/media/about-me.6658c5e874c1ad0fa5f1.jpeg",
     "static/media/my-promise.jpeg": "/lukas-rydzynski-website/static/media/my-promise.1804a3d942397ef70c06.jpeg",
@@ -46,14 +47,15 @@
     "static/media/roboto-greek-ext-400-normal.woff2": "/lukas-rydzynski-website/static/media/roboto-greek-ext-400-normal.bb723e8458c9c653e505.woff2",
     "index.html": "/lukas-rydzynski-website/index.html",
     "main.74c365ab.css.map": "/lukas-rydzynski-website/static/css/main.74c365ab.css.map",
-    "main.e636b81a.js.map": "/lukas-rydzynski-website/static/js/main.e636b81a.js.map",
-    "92.37a223fa.chunk.js.map": "/lukas-rydzynski-website/static/js/92.37a223fa.chunk.js.map",
+    "main.db915410.js.map": "/lukas-rydzynski-website/static/js/main.db915410.js.map",
+    "824.f7d33965.chunk.js.map": "/lukas-rydzynski-website/static/js/824.f7d33965.chunk.js.map",
     "369.65c8323b.chunk.js.map": "/lukas-rydzynski-website/static/js/369.65c8323b.chunk.js.map",
     "787.e4fe72a3.chunk.js.map": "/lukas-rydzynski-website/static/js/787.e4fe72a3.chunk.js.map",
-    "122.b95d148c.chunk.js.map": "/lukas-rydzynski-website/static/js/122.b95d148c.chunk.js.map"
+    "122.b95d148c.chunk.js.map": "/lukas-rydzynski-website/static/js/122.b95d148c.chunk.js.map",
+    "102.528fad5e.chunk.js.map": "/lukas-rydzynski-website/static/js/102.528fad5e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.74c365ab.css",
-    "static/js/main.e636b81a.js"
+    "static/js/main.db915410.js"
   ]
 }
