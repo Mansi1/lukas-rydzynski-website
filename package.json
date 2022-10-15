@@ -2,7 +2,6 @@
   "name": "lukas-rydzynski-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mansi1.github.io/lukas-rydzynski-website",
   "scripts": {
     "prepare": "husky install",
     "start": "react-scripts start",
