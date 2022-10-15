@@ -2,7 +2,7 @@ import React from "react"
 import { MAIN_ROUTE } from "../routes"
 import { makeStyles } from "@mui/styles"
 import { useNavigate } from "react-router-dom"
-import logoUrl from "../assets/img/logo.png"
+import logoUrl from "../assets/img/logo.svg"
 
 const useStyle = makeStyles({
   root: {
