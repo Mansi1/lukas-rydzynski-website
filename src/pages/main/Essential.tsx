@@ -1,11 +1,14 @@
-import React, { ReactNode, useLayoutEffect, useState } from "react"
+import React from "react"
 import { NotProductionValues } from "@milkscout/react"
 import { getNsTrans } from "../../functions/getNsTrans"
 import { makeStyles } from "@mui/styles"
 import { Theme } from "@mui/material"
 import { Divider } from "../../components/Divider"
+import Typed from "react-typed"
+import { useTranslation } from "react-i18next"
 
-const Trans = getNsTrans("essentails")
+const i18nNamespace = "essentials"
+const Trans = getNsTrans(i18nNamespace)
 
 const useStyle = makeStyles(({ palette }: Theme) => ({
   root: {
@@ -21,36 +24,32 @@ const useStyle = makeStyles(({ palette }: Theme) => ({
     color: palette.primary.main,
   },
 }))
-const ESSENTIALS_ARRAY: Array<ReactNode> = [
-  <Trans>Leben</Trans>,
-  <Trans>Familie</Trans>,
-  <Trans>Hobbies</Trans>,
-  <Trans>Beruf</Trans>,
-  <Trans>Reisen</Trans>,
-]
-const getRandomNumber = () => {
-  return Math.floor(Math.random() * ESSENTIALS_ARRAY.length)
-}
+
 export const Essential = () => {
-  const [essential, setEssential] = useState<number>(getRandomNumber())
+  const { t } = useTranslation(i18nNamespace)
   const classes = useStyle()
 
-  useLayoutEffect(() => {
-    const intervalListener = () => {
-      setEssential(getRandomNumber())
-    }
-    const interval = setInterval(intervalListener, 2500)
-    return () => clearInterval(interval)
-  }, [setEssential])
-
-  const essentialEl = ESSENTIALS_ARRAY[essential]
+  const ESSENTIALS_ARRAY: Array<string> = [
+    t("Leben"),
+    t("Familie"),
+    t("Hobbies"),
+    t("Beruf"),
+    t("Reisen"),
+  ]
 
   return (
     <div className={classes.root}>
       <h2 className={classes.header}>
         <Trans>Damit Sie sich aufs Wesentliche konzentrieren können:</Trans>
         <br />
-        <span className={classes.essential}>{essentialEl}</span>
+        <span className={classes.essential}>
+          <Typed
+            strings={ESSENTIALS_ARRAY}
+            typeSpeed={80}
+            backDelay={2000}
+            loop
+          />
+        </span>
       </h2>
       <Divider />
       <p className={classes.content}>
