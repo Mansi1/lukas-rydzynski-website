@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.c28a9265.css",
-    "main.js": "/static/js/main.afd9f98e.js",
-    "static/js/824.f7d33965.chunk.js": "/static/js/824.f7d33965.chunk.js",
-    "static/js/369.65c8323b.chunk.js": "/static/js/369.65c8323b.chunk.js",
+    "main.js": "/static/js/main.7aadb447.js",
+    "static/js/824.074fce95.chunk.js": "/static/js/824.074fce95.chunk.js",
+    "static/js/369.3b602923.chunk.js": "/static/js/369.3b602923.chunk.js",
     "static/js/787.e4fe72a3.chunk.js": "/static/js/787.e4fe72a3.chunk.js",
     "static/js/122.b95d148c.chunk.js": "/static/js/122.b95d148c.chunk.js",
     "static/js/102.528fad5e.chunk.js": "/static/js/102.528fad5e.chunk.js",
+    "static/js/983.1aa333fd.chunk.js": "/static/js/983.1aa333fd.chunk.js",
     "static/media/what-is-important.jpeg": "/static/media/what-is-important.a6d0a8b895fd0786a2fc.jpeg",
     "static/media/about-me.jpeg": "/static/media/about-me.6658c5e874c1ad0fa5f1.jpeg",
     "static/media/my-promise.jpeg": "/static/media/my-promise.1804a3d942397ef70c06.jpeg",
@@ -18,6 +19,7 @@
     "static/media/roboto-all-400-normal.woff": "/static/media/roboto-all-400-normal.376ea5d93f71583052f6.woff",
     "static/media/caveat-latin-400-normal.woff2": "/static/media/caveat-latin-400-normal.55cab6ba3aa4b692a421.woff2",
     "static/media/caveat-cyrillic-400-normal.woff2": "/static/media/caveat-cyrillic-400-normal.65c1dd0624b2eae69a41.woff2",
+    "static/media/logo.svg": "/static/media/logo.7275f386615faee5f121080aab2d04b3.svg",
     "static/media/caveat-cyrillic-ext-400-normal.woff2": "/static/media/caveat-cyrillic-ext-400-normal.dd1901769849172b72b8.woff2",
     "static/media/raleway-latin-600-normal.woff2": "/static/media/raleway-latin-600-normal.81d989fa5063ebf965a4.woff2",
     "static/media/raleway-latin-400-normal.woff2": "/static/media/raleway-latin-400-normal.0bdecdd83e78d540c297.woff2",
@@ -27,7 +29,6 @@
     "static/media/raleway-latin-ext-600-normal.woff2": "/static/media/raleway-latin-ext-600-normal.2fe3297f1c332c9a0558.woff2",
     "static/media/roboto-cyrillic-ext-400-normal.woff2": "/static/media/roboto-cyrillic-ext-400-normal.493afe7ae8ecfe268800.woff2",
     "static/media/raleway-latin-ext-400-normal.woff2": "/static/media/raleway-latin-ext-400-normal.e2c3693083a044bed680.woff2",
-    "static/media/logo.png": "/static/media/logo.6c64bf6684d341fb19b0.png",
     "static/media/raleway-latin-ext-500-normal.woff2": "/static/media/raleway-latin-ext-500-normal.5594865b30f5e4c519c9.woff2",
     "static/media/italiana-all-400-normal.woff": "/static/media/italiana-all-400-normal.6c7586b75fcaee686969.woff",
     "static/media/raleway-cyrillic-ext-600-normal.woff2": "/static/media/raleway-cyrillic-ext-600-normal.eedf4c41a32a2947e859.woff2",
@@ -47,15 +48,16 @@
     "static/media/roboto-greek-ext-400-normal.woff2": "/static/media/roboto-greek-ext-400-normal.bb723e8458c9c653e505.woff2",
     "index.html": "/index.html",
     "main.c28a9265.css.map": "/static/css/main.c28a9265.css.map",
-    "main.afd9f98e.js.map": "/static/js/main.afd9f98e.js.map",
-    "824.f7d33965.chunk.js.map": "/static/js/824.f7d33965.chunk.js.map",
-    "369.65c8323b.chunk.js.map": "/static/js/369.65c8323b.chunk.js.map",
+    "main.7aadb447.js.map": "/static/js/main.7aadb447.js.map",
+    "824.074fce95.chunk.js.map": "/static/js/824.074fce95.chunk.js.map",
+    "369.3b602923.chunk.js.map": "/static/js/369.3b602923.chunk.js.map",
     "787.e4fe72a3.chunk.js.map": "/static/js/787.e4fe72a3.chunk.js.map",
     "122.b95d148c.chunk.js.map": "/static/js/122.b95d148c.chunk.js.map",
-    "102.528fad5e.chunk.js.map": "/static/js/102.528fad5e.chunk.js.map"
+    "102.528fad5e.chunk.js.map": "/static/js/102.528fad5e.chunk.js.map",
+    "983.1aa333fd.chunk.js.map": "/static/js/983.1aa333fd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c28a9265.css",
-    "static/js/main.afd9f98e.js"
+    "static/js/main.7aadb447.js"
   ]
 }
