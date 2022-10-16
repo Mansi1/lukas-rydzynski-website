@@ -1,9 +1,10 @@
 import React from "react"
 import { getNsTrans } from "../../functions/getNsTrans"
 import { MAIN_MY_PROMISE_HASH } from "../../routes"
-const Trans = getNsTrans("my-promise")
 import { makeStyles } from "@mui/styles"
 import { Theme } from "@mui/material"
+
+const Trans = getNsTrans("my-promise")
 
 const useStyle = makeStyles(({}: Theme) => ({
   root: {
@@ -32,7 +33,7 @@ export const MyPromise = () => {
           Dank meiner Kunden habe ich das Vergnügen, die Welt neu zu entdecken.
           Ich schätze die Möglichkeit, an der Verwirklichung ihrer Wünsche und
           Umsetzung konkreter Pläne mitwirken zu können, sehr - seien es
-          private, Lebens- aber auch berufliche Pläne.
+          private, Lebens-, aber auch berufliche Pläne.
         </Trans>
       </p>
       <p>

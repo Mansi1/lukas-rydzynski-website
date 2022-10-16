@@ -80,7 +80,7 @@ export const Footer = () => {
             <div>
               <div>
                 <a href={`tel:${MOBILE}`} className={classes.link}>
-                  Mobile: {MOBILE}
+                  {MOBILE}
                 </a>
               </div>
               <div>

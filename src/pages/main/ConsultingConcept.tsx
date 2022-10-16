@@ -89,7 +89,7 @@ export const ConsultingConcept = () => {
         </p>
         <div className={classes.divider} />
         <h2>
-          <Trans>5 Schritte für eine Vertrauensvolle Partnerschaft</Trans>
+          <Trans>5 Schritte für eine vertrauensvolle Partnerschaft</Trans>
         </h2>
         <Stack direction="column" spacing={2} className={classes.rootStep}>
           <div>

@@ -10,6 +10,7 @@ import { Essential } from "./Essential"
 import { Individuality } from "./Individuality"
 import { ForYourFuture } from "./ForYourFuture"
 import backgroundImage from "../../assets/img/my-promise.jpeg"
+import { FastContact } from "./FastContact"
 
 const useStyle = makeStyles({
   root: {
@@ -41,6 +42,7 @@ export const MainPage = () => {
       <Menu />
       <div className={classes.root}>
         <div>
+          <FastContact />
           <WhatIsImportant />
           <Essential />
           <AboutMe />

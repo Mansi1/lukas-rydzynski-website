@@ -1,13 +1,10 @@
 {
-  "spinner": {
-    "Ladevorgang": "Ladevorgang"
-  },
   "about-me": {
     "Meine Arbeit ist meine Leidenschaft. Dabei liegen mir in erster Linie die Wünsche und Interessen meiner Kunden am Herzen. Jede Situation ist individuell - daher gehe ich sie mit Herz und Verständnis an!": "Meine Arbeit ist meine Leidenschaft. Dabei liegen mir in erster Linie die Wünsche und Interessen meiner Kunden am Herzen. Jede Situation ist individuell - daher gehe ich sie mit Herz und Verständnis an!",
     "Über mich": "Über mich"
   },
   "consulting-concept": {
-    "5 Schritte für eine Vertrauensvolle Partnerschaft": "5 Schritte für eine Vertrauensvolle Partnerschaft",
+    "5 Schritte für eine vertrauensvolle Partnerschaft": "5 Schritte für eine vertrauensvolle Partnerschaft",
     "Analyse": "Analyse",
     "Auswertung und Vermögensplanung mit Qualitätssiegel": "Auswertung und Vermögensplanung mit Qualitätssiegel",
     "Beratung": "Beratung",
@@ -30,6 +27,9 @@
     "Leben": "Leben",
     "Mein ganzheitlicher Ansatz für die Vermögensverwaltung stellt sicher, dass Ihre persönliche und berufliche Situation bei der Entwicklung der passenden Strategie für Ihr Vermögen berücksichtigt wird.": "Mein ganzheitlicher Ansatz für die Vermögensverwaltung stellt sicher, dass Ihre persönliche und berufliche Situation bei der Entwicklung der passenden Strategie für Ihr Vermögen berücksichtigt wird.",
     "Reisen": "Reisen"
+  },
+  "fast-contact": {
+    "Ich helfe Ihnen gerne in jeder Lebenslage, kontaktieren Sie mich telefonisch unter <2>{{mobile}}</2> oder schriftlich <6>{{email}}</6>": "Ich helfe Ihnen gerne in jeder Lebenslage, kontaktieren Sie mich telefonisch unter <2>{{mobile}}</2> oder schriftlich <6>{{email}}</6>"
   },
   "footer": {
     "Impressum & Datenschutz": "Impressum & Datenschutz",
@@ -57,10 +57,13 @@
   },
   "my-promise": {
     "Auffinden von optimalen Kreditkonditionen, individuelle Anpassung eines Angebots, breite Möglichkeiten des Finanzmanagements oder schließlich der endgültige Abschluss einer Transaktion geben mir nicht nur große Zufriedenheit, sondern bestätigen mich darin, etwas Sinnvolles zu tun!": "Auffinden von optimalen Kreditkonditionen, individuelle Anpassung eines Angebots, breite Möglichkeiten des Finanzmanagements oder schließlich der endgültige Abschluss einer Transaktion geben mir nicht nur große Zufriedenheit, sondern bestätigen mich darin, etwas Sinnvolles zu tun!",
-    "Dank meiner Kunden habe ich das Vergnügen, die Welt neu zu entdecken. Ich schätze die Möglichkeit, an der Verwirklichung ihrer Wünsche und Umsetzung konkreter Pläne mitwirken zu können, sehr - seien es private, Lebens- aber auch berufliche Pläne.": "Dank meiner Kunden habe ich das Vergnügen, die Welt neu zu entdecken. Ich schätze die Möglichkeit, an der Verwirklichung ihrer Wünsche und Umsetzung konkreter Pläne mitwirken zu können, sehr - seien es private, Lebens- aber auch berufliche Pläne.",
+    "Dank meiner Kunden habe ich das Vergnügen, die Welt neu zu entdecken. Ich schätze die Möglichkeit, an der Verwirklichung ihrer Wünsche und Umsetzung konkreter Pläne mitwirken zu können, sehr - seien es private, Lebens-, aber auch berufliche Pläne.": "Dank meiner Kunden habe ich das Vergnügen, die Welt neu zu entdecken. Ich schätze die Möglichkeit, an der Verwirklichung ihrer Wünsche und Umsetzung konkreter Pläne mitwirken zu können, sehr - seien es private, Lebens-, aber auch berufliche Pläne.",
     "Mein Versprechen": "Mein Versprechen",
     "Nehmen Sie gerne Kontakt mit mir auf.": "Nehmen Sie gerne Kontakt mit mir auf.",
     "Zusammenarbeit nach den Prinzipien des gegenseitigen Respekts, Achtung von Werten sowie eine individuelle Herangehensweise sind die wichtigsten Elemente, die mich bei der Erfüllung meiner beruflichen Tätigkeit leiten.": "Zusammenarbeit nach den Prinzipien des gegenseitigen Respekts, Achtung von Werten sowie eine individuelle Herangehensweise sind die wichtigsten Elemente, die mich bei der Erfüllung meiner beruflichen Tätigkeit leiten."
+  },
+  "spinner": {
+    "Ladevorgang": "Ladevorgang"
   },
   "what-is-important": {
     "Jeder Mensch hat seine eigenen Träume, Hoffnungen und Ziele. Ich helfe Ihnen dabei, Ihre Wünsche zu verwirklichen und finanzielle Ziele zu erreichen.": "Jeder Mensch hat seine eigenen Träume, Hoffnungen und Ziele. Ich helfe Ihnen dabei, Ihre Wünsche zu verwirklichen und finanzielle Ziele zu erreichen.",
