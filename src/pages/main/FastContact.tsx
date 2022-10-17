@@ -31,7 +31,7 @@ export const FastContact = () => {
           <a className={classes.link} href={`tel:${MOBILE}`}>
             {"{{mobile}}"}
           </a>{" "}
-          oder schriftlich{" "}
+          oder schriftlich an{" "}
           <a className={classes.link} href={`mailto:${EMAIL}`}>
             {"{{email}}"}
           </a>

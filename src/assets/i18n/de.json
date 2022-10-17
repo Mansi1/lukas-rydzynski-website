@@ -29,7 +29,7 @@
     "Reisen": "Reisen"
   },
   "fast-contact": {
-    "Ich helfe Ihnen gerne in jeder Lebenslage, kontaktieren Sie mich telefonisch unter <2>{{mobile}}</2> oder schriftlich <6>{{email}}</6>": "Ich helfe Ihnen gerne in jeder Lebenslage, kontaktieren Sie mich telefonisch unter <2>{{mobile}}</2> oder schriftlich <6>{{email}}</6>"
+    "Ich helfe Ihnen gerne in jeder Lebenslage, kontaktieren Sie mich telefonisch unter <2>{{mobile}}</2> oder schriftlich an<6>{{email}}</6>": "Ich helfe Ihnen gerne in jeder Lebenslage, kontaktieren Sie mich telefonisch unter <2>{{mobile}}</2> oder schriftlich an<6>{{email}}</6>"
   },
   "footer": {
     "Impressum & Datenschutz": "Impressum & Datenschutz",
